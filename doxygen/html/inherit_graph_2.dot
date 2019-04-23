@@ -1,0 +1,48 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node287 [label="QDialog",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node287 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="AddressBookPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_address_book_page.html",tooltip=" "];
+  Node287 -> Node289 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node289 [label="AskPassphraseDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ask_passphrase_dialog.html",tooltip=" "];
+  Node287 -> Node290 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node290 [label="Bip38ToolDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bip38_tool_dialog.html",tooltip=" "];
+  Node287 -> Node291 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node291 [label="CoinControlDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_coin_control_dialog.html",tooltip=" "];
+  Node287 -> Node292 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node292 [label="EditAddressDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_edit_address_dialog.html",tooltip=" "];
+  Node287 -> Node293 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node293 [label="HelpMessageDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_help_message_dialog.html",tooltip=" "];
+  Node287 -> Node294 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node294 [label="Intro",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intro.html",tooltip=" "];
+  Node287 -> Node295 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node295 [label="MultiSendDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_multi_send_dialog.html",tooltip=" "];
+  Node287 -> Node296 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node296 [label="MultisigDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_multisig_dialog.html",tooltip=" "];
+  Node287 -> Node297 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node297 [label="ObfuscationConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_obfuscation_config.html",tooltip=" "];
+  Node287 -> Node298 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node298 [label="OpenURIDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_u_r_i_dialog.html",tooltip=" "];
+  Node287 -> Node299 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node299 [label="OptionsDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_options_dialog.html",tooltip=" "];
+  Node287 -> Node300 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node300 [label="PrivacyDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_privacy_dialog.html",tooltip=" "];
+  Node287 -> Node301 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node301 [label="ReceiveCoinsDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_receive_coins_dialog.html",tooltip=" "];
+  Node287 -> Node302 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node302 [label="ReceiveRequestDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_receive_request_dialog.html",tooltip=" "];
+  Node287 -> Node303 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node303 [label="RPCConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_r_p_c_console.html",tooltip=" "];
+  Node287 -> Node304 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node304 [label="SendCoinsDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_send_coins_dialog.html",tooltip=" "];
+  Node287 -> Node305 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node305 [label="SignVerifyMessageDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sign_verify_message_dialog.html",tooltip=" "];
+  Node287 -> Node306 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node306 [label="TransactionDescDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_transaction_desc_dialog.html",tooltip=" "];
+  Node287 -> Node307 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node307 [label="ZZNZControlDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_z_z_n_z_control_dialog.html",tooltip=" "];
+}

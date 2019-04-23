@@ -1,0 +1,10 @@
+digraph "CCoins::IsPruned"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node3 [label="CCoins::IsPruned",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="CCoinsViewMemPool::\lGetCoins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_coins_view_mem_pool.html#a1a4a556821b1680ff4b73758c8a1e471",tooltip="Retrieve the CCoins (unspent transaction outputs) for a given txid."];
+}

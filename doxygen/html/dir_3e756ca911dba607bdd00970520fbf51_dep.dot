@@ -1,0 +1,12 @@
+digraph "D:/Documentz/GitHub/ZENZO-Core/src/libzerocoin" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6be210b7615ccb4059ce9ba907fecdcd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_6be210b7615ccb4059ce9ba907fecdcd.html"]
+  dir_3e756ca911dba607bdd00970520fbf51 [shape=box, label="libzerocoin", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3e756ca911dba607bdd00970520fbf51.html"];
+  }
+  dir_d7f96a380170bf1fa380a1d70aacbd95 [shape=box label="primitives" URL="dir_d7f96a380170bf1fa380a1d70aacbd95.html"];
+  dir_d7f96a380170bf1fa380a1d70aacbd95->dir_3e756ca911dba607bdd00970520fbf51 [headlabel="1", labeldistance=1.5 headhref="dir_000026_000027.html"];
+  dir_3e756ca911dba607bdd00970520fbf51->dir_d7f96a380170bf1fa380a1d70aacbd95 [headlabel="1", labeldistance=1.5 headhref="dir_000027_000026.html"];
+}

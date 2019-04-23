@@ -1,0 +1,31 @@
+\hypertarget{structsph__sha224__context}{}\section{sph\+\_\+sha224\+\_\+context Struct Reference}
+\label{structsph__sha224__context}\index{sph\_sha224\_context@{sph\_sha224\_context}}
+
+
+{\ttfamily \#include $<$sph\+\_\+sha2.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsph__sha224__context_a0dd01410525352246ebf8379a7106551}\label{structsph__sha224__context_a0dd01410525352246ebf8379a7106551}} 
+unsigned char {\bfseries buf} \mbox{[}64\mbox{]}
+\item 
+\mbox{\Hypertarget{structsph__sha224__context_ad694208fa46b7032e0cf0ef62752cc39}\label{structsph__sha224__context_ad694208fa46b7032e0cf0ef62752cc39}} 
+sph\+\_\+u32 {\bfseries val} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{structsph__sha224__context_ad35bd273d743e0d396da73befaad56c9}\label{structsph__sha224__context_ad35bd273d743e0d396da73befaad56c9}} 
+sph\+\_\+u32 {\bfseries count\+\_\+high}
+\item 
+\mbox{\Hypertarget{structsph__sha224__context_ac99a110564f7cc60ddd51212a529e34a}\label{structsph__sha224__context_ac99a110564f7cc60ddd51212a529e34a}} 
+sph\+\_\+u32 {\bfseries count\+\_\+low}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure is a context for S\+H\+A-\/224 computations\+: it contains the intermediate values and some data from the last entered block. Once a S\+H\+A-\/224 computation has been performed, the context can be reused for another computation.
+
+The contents of this structure are private. A running S\+H\+A-\/224 computation can be cloned by copying the context (e.\+g. with a simple {\ttfamily memcpy()}). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/crypto/\mbox{\hyperlink{sph__sha2_8h}{sph\+\_\+sha2.\+h}}\end{DoxyCompactItemize}

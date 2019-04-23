@@ -1,0 +1,281 @@
+\hypertarget{class_wallet_view}{}\section{Wallet\+View Class Reference}
+\label{class_wallet_view}\index{WalletView@{WalletView}}
+
+
+Inherits Q\+Stacked\+Widget.
+
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_wallet_view_ac9065162b1cf4700f733d1fb119bd973}{goto\+Overview\+Page}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a04b97e2623ac678e92111f1db14fde83}{goto\+History\+Page}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a0cdc8766e5d590b18338d23c226e5565}{goto\+Masternode\+Page}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a7a537efdf362fbbe43098eb147362159}{goto\+Block\+Explorer\+Page}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a69e62e77e7a4b9fc4c43b07d41b04600}{goto\+Privacy\+Page}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a55ebee0d484c3ada114197050ec417db}{goto\+Receive\+Coins\+Page}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a2a70c2b00b097dd7b83b6915bb037ea3}{goto\+Send\+Coins\+Page}} (Q\+String addr=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{class_wallet_view_a6443ddcb872a1743a61102a3dcd2d560}{goto\+Sign\+Message\+Tab}} (Q\+String addr=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{class_wallet_view_a0a23aaaf87d3aec5ae8b1b8320d66796}{goto\+Verify\+Message\+Tab}} (Q\+String addr=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{class_wallet_view_abddf68fced738b62ad65d4e86ef54c4c}{goto\+Multi\+Send\+Dialog}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a73b3738ee4714ac1f461bfa84a249ab9}{goto\+Multisig\+Dialog}} (int index)
+\item 
+void \mbox{\hyperlink{class_wallet_view_adeeea711b11aaaaedeba5cb4500fd3d1}{goto\+Bip38\+Tool}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_addde7d2260658ee06f47f9c095a8cb2a}{process\+New\+Transaction}} (const Q\+Model\+Index \&parent, int start, int)
+\item 
+void \mbox{\hyperlink{class_wallet_view_a164c3de8fc69ef6f39fb7c15e4bda553}{encrypt\+Wallet}} (bool status)
+\item 
+void \mbox{\hyperlink{class_wallet_view_a9800d793b552076b4207276d9e08c8b6}{backup\+Wallet}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a36699c31e256becb2afd92f834830ba0}{change\+Passphrase}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_ac258d549f0e55ad4f84b9d21848faf02}{unlock\+Wallet}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_ae76bd29c36d1cfa9bc986924a0454eeb}{lock\+Wallet}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a739b3c92d336efb3cf1249a84d4deeab}{toggle\+Lock\+Wallet}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a6f0d012c18ea2df7336c852abe2a50d0}{used\+Sending\+Addresses}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_accb5d9e2789c62e03ad1723518d31c02}{used\+Receiving\+Addresses}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_ad348f2ed9f843ef9125ca416307c7412}{update\+Encryption\+Status}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a8a1f4b689abc0f1073c547ec1f871a26}{show\+Progress}} (const Q\+String \&title, int n\+Progress)
+\item 
+void \mbox{\hyperlink{class_wallet_view_ac4206b008b9c16dd6931aa56d9fb6fd4}{trx\+Amount}} (Q\+String amount)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_wallet_view_aac71ea140f87cd60081b56e579b6fa0c}{show\+Normal\+If\+Minimized}} ()
+\item 
+void \mbox{\hyperlink{class_wallet_view_a901527bc1086ef5443a264af651de178}{message}} (const Q\+String \&title, const Q\+String \&message, unsigned int style)
+\item 
+void \mbox{\hyperlink{class_wallet_view_a98ed22bbde34c1e614e60ecd0b07f03b}{encryption\+Status\+Changed}} (int status)
+\item 
+void \mbox{\hyperlink{class_wallet_view_aa2348613d312c4c762d3e8100bd38067}{incoming\+Transaction}} (const Q\+String \&date, int unit, const C\+Amount \&amount, const Q\+String \&type, const Q\+String \&address)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_wallet_view_a015da635646a47196bbcd819f7e01e7c}\label{class_wallet_view_a015da635646a47196bbcd819f7e01e7c}} 
+{\bfseries Wallet\+View} (Q\+Widget $\ast$parent)
+\item 
+\mbox{\Hypertarget{class_wallet_view_a4405b0cf33d31ea663cb1e5047ae1d97}\label{class_wallet_view_a4405b0cf33d31ea663cb1e5047ae1d97}} 
+void {\bfseries set\+Bitcoin\+G\+UI} (\mbox{\hyperlink{class_bitcoin_g_u_i}{Bitcoin\+G\+UI}} $\ast$gui)
+\item 
+void \mbox{\hyperlink{class_wallet_view_a46d9a8d93adfdcc29cae9ff0d44c313e}{set\+Client\+Model}} (\mbox{\hyperlink{class_client_model}{Client\+Model}} $\ast$client\+Model)
+\item 
+void \mbox{\hyperlink{class_wallet_view_a0a37ff693a4f9c1e5ddc23f9cd3913be}{set\+Wallet\+Model}} (\mbox{\hyperlink{class_wallet_model}{Wallet\+Model}} $\ast$wallet\+Model)
+\item 
+\mbox{\Hypertarget{class_wallet_view_a0ae21d91a9d7755026ce2a6846cef68d}\label{class_wallet_view_a0ae21d91a9d7755026ce2a6846cef68d}} 
+bool {\bfseries handle\+Payment\+Request} (const \mbox{\hyperlink{class_send_coins_recipient}{Send\+Coins\+Recipient}} \&recipient)
+\item 
+\mbox{\Hypertarget{class_wallet_view_af3ed06b191b6d933788f32ed2daa5fae}\label{class_wallet_view_af3ed06b191b6d933788f32ed2daa5fae}} 
+void {\bfseries show\+Out\+Of\+Sync\+Warning} (bool f\+Show)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wallet_view_a9800d793b552076b4207276d9e08c8b6}\label{class_wallet_view_a9800d793b552076b4207276d9e08c8b6}} 
+\index{WalletView@{WalletView}!backupWallet@{backupWallet}}
+\index{backupWallet@{backupWallet}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{backupWallet}{backupWallet}}
+{\footnotesize\ttfamily void Wallet\+View\+::backup\+Wallet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Backup the wallet \mbox{\Hypertarget{class_wallet_view_a36699c31e256becb2afd92f834830ba0}\label{class_wallet_view_a36699c31e256becb2afd92f834830ba0}} 
+\index{WalletView@{WalletView}!changePassphrase@{changePassphrase}}
+\index{changePassphrase@{changePassphrase}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{changePassphrase}{changePassphrase}}
+{\footnotesize\ttfamily void Wallet\+View\+::change\+Passphrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Change encrypted wallet passphrase \mbox{\Hypertarget{class_wallet_view_a98ed22bbde34c1e614e60ecd0b07f03b}\label{class_wallet_view_a98ed22bbde34c1e614e60ecd0b07f03b}} 
+\index{WalletView@{WalletView}!encryptionStatusChanged@{encryptionStatusChanged}}
+\index{encryptionStatusChanged@{encryptionStatusChanged}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{encryptionStatusChanged}{encryptionStatusChanged}}
+{\footnotesize\ttfamily void Wallet\+View\+::encryption\+Status\+Changed (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Encryption status of wallet changed \mbox{\Hypertarget{class_wallet_view_a164c3de8fc69ef6f39fb7c15e4bda553}\label{class_wallet_view_a164c3de8fc69ef6f39fb7c15e4bda553}} 
+\index{WalletView@{WalletView}!encryptWallet@{encryptWallet}}
+\index{encryptWallet@{encryptWallet}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{encryptWallet}{encryptWallet}}
+{\footnotesize\ttfamily void Wallet\+View\+::encrypt\+Wallet (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Encrypt the wallet \mbox{\Hypertarget{class_wallet_view_adeeea711b11aaaaedeba5cb4500fd3d1}\label{class_wallet_view_adeeea711b11aaaaedeba5cb4500fd3d1}} 
+\index{WalletView@{WalletView}!gotoBip38Tool@{gotoBip38Tool}}
+\index{gotoBip38Tool@{gotoBip38Tool}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoBip38Tool}{gotoBip38Tool}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Bip38\+Tool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show B\+IP 38 tool -\/ default to Encryption tab \mbox{\Hypertarget{class_wallet_view_a7a537efdf362fbbe43098eb147362159}\label{class_wallet_view_a7a537efdf362fbbe43098eb147362159}} 
+\index{WalletView@{WalletView}!gotoBlockExplorerPage@{gotoBlockExplorerPage}}
+\index{gotoBlockExplorerPage@{gotoBlockExplorerPage}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoBlockExplorerPage}{gotoBlockExplorerPage}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Block\+Explorer\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to explorer page \mbox{\Hypertarget{class_wallet_view_a04b97e2623ac678e92111f1db14fde83}\label{class_wallet_view_a04b97e2623ac678e92111f1db14fde83}} 
+\index{WalletView@{WalletView}!gotoHistoryPage@{gotoHistoryPage}}
+\index{gotoHistoryPage@{gotoHistoryPage}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoHistoryPage}{gotoHistoryPage}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+History\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to history (transactions) page \mbox{\Hypertarget{class_wallet_view_a0cdc8766e5d590b18338d23c226e5565}\label{class_wallet_view_a0cdc8766e5d590b18338d23c226e5565}} 
+\index{WalletView@{WalletView}!gotoMasternodePage@{gotoMasternodePage}}
+\index{gotoMasternodePage@{gotoMasternodePage}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoMasternodePage}{gotoMasternodePage}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Masternode\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to masternode page \mbox{\Hypertarget{class_wallet_view_abddf68fced738b62ad65d4e86ef54c4c}\label{class_wallet_view_abddf68fced738b62ad65d4e86ef54c4c}} 
+\index{WalletView@{WalletView}!gotoMultiSendDialog@{gotoMultiSendDialog}}
+\index{gotoMultiSendDialog@{gotoMultiSendDialog}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoMultiSendDialog}{gotoMultiSendDialog}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Multi\+Send\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show Multi\+Send Dialog \mbox{\Hypertarget{class_wallet_view_a73b3738ee4714ac1f461bfa84a249ab9}\label{class_wallet_view_a73b3738ee4714ac1f461bfa84a249ab9}} 
+\index{WalletView@{WalletView}!gotoMultisigDialog@{gotoMultisigDialog}}
+\index{gotoMultisigDialog@{gotoMultisigDialog}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoMultisigDialog}{gotoMultisigDialog}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Multisig\+Dialog (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show a multisig tab \mbox{\Hypertarget{class_wallet_view_ac9065162b1cf4700f733d1fb119bd973}\label{class_wallet_view_ac9065162b1cf4700f733d1fb119bd973}} 
+\index{WalletView@{WalletView}!gotoOverviewPage@{gotoOverviewPage}}
+\index{gotoOverviewPage@{gotoOverviewPage}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoOverviewPage}{gotoOverviewPage}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Overview\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to overview (home) page \mbox{\Hypertarget{class_wallet_view_a69e62e77e7a4b9fc4c43b07d41b04600}\label{class_wallet_view_a69e62e77e7a4b9fc4c43b07d41b04600}} 
+\index{WalletView@{WalletView}!gotoPrivacyPage@{gotoPrivacyPage}}
+\index{gotoPrivacyPage@{gotoPrivacyPage}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoPrivacyPage}{gotoPrivacyPage}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Privacy\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to privacy page \mbox{\Hypertarget{class_wallet_view_a55ebee0d484c3ada114197050ec417db}\label{class_wallet_view_a55ebee0d484c3ada114197050ec417db}} 
+\index{WalletView@{WalletView}!gotoReceiveCoinsPage@{gotoReceiveCoinsPage}}
+\index{gotoReceiveCoinsPage@{gotoReceiveCoinsPage}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoReceiveCoinsPage}{gotoReceiveCoinsPage}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Receive\+Coins\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to receive coins page \mbox{\Hypertarget{class_wallet_view_a2a70c2b00b097dd7b83b6915bb037ea3}\label{class_wallet_view_a2a70c2b00b097dd7b83b6915bb037ea3}} 
+\index{WalletView@{WalletView}!gotoSendCoinsPage@{gotoSendCoinsPage}}
+\index{gotoSendCoinsPage@{gotoSendCoinsPage}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoSendCoinsPage}{gotoSendCoinsPage}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Send\+Coins\+Page (\begin{DoxyParamCaption}\item[{Q\+String}]{addr = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to send coins page \mbox{\Hypertarget{class_wallet_view_a6443ddcb872a1743a61102a3dcd2d560}\label{class_wallet_view_a6443ddcb872a1743a61102a3dcd2d560}} 
+\index{WalletView@{WalletView}!gotoSignMessageTab@{gotoSignMessageTab}}
+\index{gotoSignMessageTab@{gotoSignMessageTab}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoSignMessageTab}{gotoSignMessageTab}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Sign\+Message\+Tab (\begin{DoxyParamCaption}\item[{Q\+String}]{addr = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show Sign/\+Verify Message dialog and switch to sign message tab \mbox{\Hypertarget{class_wallet_view_a0a23aaaf87d3aec5ae8b1b8320d66796}\label{class_wallet_view_a0a23aaaf87d3aec5ae8b1b8320d66796}} 
+\index{WalletView@{WalletView}!gotoVerifyMessageTab@{gotoVerifyMessageTab}}
+\index{gotoVerifyMessageTab@{gotoVerifyMessageTab}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{gotoVerifyMessageTab}{gotoVerifyMessageTab}}
+{\footnotesize\ttfamily void Wallet\+View\+::goto\+Verify\+Message\+Tab (\begin{DoxyParamCaption}\item[{Q\+String}]{addr = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show Sign/\+Verify Message dialog and switch to verify message tab \mbox{\Hypertarget{class_wallet_view_aa2348613d312c4c762d3e8100bd38067}\label{class_wallet_view_aa2348613d312c4c762d3e8100bd38067}} 
+\index{WalletView@{WalletView}!incomingTransaction@{incomingTransaction}}
+\index{incomingTransaction@{incomingTransaction}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{incomingTransaction}{incomingTransaction}}
+{\footnotesize\ttfamily void Wallet\+View\+::incoming\+Transaction (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{date,  }\item[{int}]{unit,  }\item[{const C\+Amount \&}]{amount,  }\item[{const Q\+String \&}]{type,  }\item[{const Q\+String \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Notify that a new transaction appeared \mbox{\Hypertarget{class_wallet_view_ae76bd29c36d1cfa9bc986924a0454eeb}\label{class_wallet_view_ae76bd29c36d1cfa9bc986924a0454eeb}} 
+\index{WalletView@{WalletView}!lockWallet@{lockWallet}}
+\index{lockWallet@{lockWallet}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{lockWallet}{lockWallet}}
+{\footnotesize\ttfamily void Wallet\+View\+::lock\+Wallet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Lock wallet \mbox{\Hypertarget{class_wallet_view_a901527bc1086ef5443a264af651de178}\label{class_wallet_view_a901527bc1086ef5443a264af651de178}} 
+\index{WalletView@{WalletView}!message@{message}}
+\index{message@{message}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily void Wallet\+View\+::message (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{title,  }\item[{const Q\+String \&}]{message,  }\item[{unsigned int}]{style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Fired when a message should be reported to the user \mbox{\Hypertarget{class_wallet_view_addde7d2260658ee06f47f9c095a8cb2a}\label{class_wallet_view_addde7d2260658ee06f47f9c095a8cb2a}} 
+\index{WalletView@{WalletView}!processNewTransaction@{processNewTransaction}}
+\index{processNewTransaction@{processNewTransaction}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{processNewTransaction}{processNewTransaction}}
+{\footnotesize\ttfamily void Wallet\+View\+::process\+New\+Transaction (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent,  }\item[{int}]{start,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show incoming transaction notification for new transactions.
+
+The new items are those between start and end inclusive, under the given parent item. \mbox{\Hypertarget{class_wallet_view_a46d9a8d93adfdcc29cae9ff0d44c313e}\label{class_wallet_view_a46d9a8d93adfdcc29cae9ff0d44c313e}} 
+\index{WalletView@{WalletView}!setClientModel@{setClientModel}}
+\index{setClientModel@{setClientModel}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{setClientModel()}{setClientModel()}}
+{\footnotesize\ttfamily void Wallet\+View\+::set\+Client\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client_model}{Client\+Model}} $\ast$}]{client\+Model }\end{DoxyParamCaption})}
+
+Set the client model. The client model represents the part of the core that communicates with the P2P network, and is wallet-\/agnostic. \mbox{\Hypertarget{class_wallet_view_a0a37ff693a4f9c1e5ddc23f9cd3913be}\label{class_wallet_view_a0a37ff693a4f9c1e5ddc23f9cd3913be}} 
+\index{WalletView@{WalletView}!setWalletModel@{setWalletModel}}
+\index{setWalletModel@{setWalletModel}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{setWalletModel()}{setWalletModel()}}
+{\footnotesize\ttfamily void Wallet\+View\+::set\+Wallet\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wallet_model}{Wallet\+Model}} $\ast$}]{wallet\+Model }\end{DoxyParamCaption})}
+
+Set the wallet model. The wallet model represents a bitcoin wallet, and offers access to the list of transactions, address book and sending functionality. \mbox{\Hypertarget{class_wallet_view_aac71ea140f87cd60081b56e579b6fa0c}\label{class_wallet_view_aac71ea140f87cd60081b56e579b6fa0c}} 
+\index{WalletView@{WalletView}!showNormalIfMinimized@{showNormalIfMinimized}}
+\index{showNormalIfMinimized@{showNormalIfMinimized}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{showNormalIfMinimized}{showNormalIfMinimized}}
+{\footnotesize\ttfamily void Wallet\+View\+::show\+Normal\+If\+Minimized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Signal that we want to show the main window \mbox{\Hypertarget{class_wallet_view_a8a1f4b689abc0f1073c547ec1f871a26}\label{class_wallet_view_a8a1f4b689abc0f1073c547ec1f871a26}} 
+\index{WalletView@{WalletView}!showProgress@{showProgress}}
+\index{showProgress@{showProgress}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{showProgress}{showProgress}}
+{\footnotesize\ttfamily void Wallet\+View\+::show\+Progress (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{title,  }\item[{int}]{n\+Progress }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show progress dialog e.\+g. for rescan \mbox{\Hypertarget{class_wallet_view_a739b3c92d336efb3cf1249a84d4deeab}\label{class_wallet_view_a739b3c92d336efb3cf1249a84d4deeab}} 
+\index{WalletView@{WalletView}!toggleLockWallet@{toggleLockWallet}}
+\index{toggleLockWallet@{toggleLockWallet}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{toggleLockWallet}{toggleLockWallet}}
+{\footnotesize\ttfamily void Wallet\+View\+::toggle\+Lock\+Wallet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Toggle wallet lock state \mbox{\Hypertarget{class_wallet_view_ac4206b008b9c16dd6931aa56d9fb6fd4}\label{class_wallet_view_ac4206b008b9c16dd6931aa56d9fb6fd4}} 
+\index{WalletView@{WalletView}!trxAmount@{trxAmount}}
+\index{trxAmount@{trxAmount}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{trxAmount}{trxAmount}}
+{\footnotesize\ttfamily void Wallet\+View\+::trx\+Amount (\begin{DoxyParamCaption}\item[{Q\+String}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Update selected Z\+NZ amount from transactionview
+
+Update wallet with the sum of the selected transactions \mbox{\Hypertarget{class_wallet_view_ac258d549f0e55ad4f84b9d21848faf02}\label{class_wallet_view_ac258d549f0e55ad4f84b9d21848faf02}} 
+\index{WalletView@{WalletView}!unlockWallet@{unlockWallet}}
+\index{unlockWallet@{unlockWallet}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{unlockWallet}{unlockWallet}}
+{\footnotesize\ttfamily void Wallet\+View\+::unlock\+Wallet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Ask for passphrase to unlock wallet temporarily \mbox{\Hypertarget{class_wallet_view_ad348f2ed9f843ef9125ca416307c7412}\label{class_wallet_view_ad348f2ed9f843ef9125ca416307c7412}} 
+\index{WalletView@{WalletView}!updateEncryptionStatus@{updateEncryptionStatus}}
+\index{updateEncryptionStatus@{updateEncryptionStatus}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{updateEncryptionStatus}{updateEncryptionStatus}}
+{\footnotesize\ttfamily void Wallet\+View\+::update\+Encryption\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Re-\/emit encryption status signal \mbox{\Hypertarget{class_wallet_view_accb5d9e2789c62e03ad1723518d31c02}\label{class_wallet_view_accb5d9e2789c62e03ad1723518d31c02}} 
+\index{WalletView@{WalletView}!usedReceivingAddresses@{usedReceivingAddresses}}
+\index{usedReceivingAddresses@{usedReceivingAddresses}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{usedReceivingAddresses}{usedReceivingAddresses}}
+{\footnotesize\ttfamily void Wallet\+View\+::used\+Receiving\+Addresses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show used receiving addresses \mbox{\Hypertarget{class_wallet_view_a6f0d012c18ea2df7336c852abe2a50d0}\label{class_wallet_view_a6f0d012c18ea2df7336c852abe2a50d0}} 
+\index{WalletView@{WalletView}!usedSendingAddresses@{usedSendingAddresses}}
+\index{usedSendingAddresses@{usedSendingAddresses}!WalletView@{WalletView}}
+\subsubsection{\texorpdfstring{usedSendingAddresses}{usedSendingAddresses}}
+{\footnotesize\ttfamily void Wallet\+View\+::used\+Sending\+Addresses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show used sending addresses 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/qt/walletview.\+h\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/qt/moc\+\_\+walletview.\+cpp\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/qt/walletview.\+cpp\end{DoxyCompactItemize}

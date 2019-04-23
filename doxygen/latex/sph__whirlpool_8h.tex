@@ -1,0 +1,31 @@
+\hypertarget{sph__whirlpool_8h}{}\section{D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/crypto/sph\+\_\+whirlpool.h File Reference}
+\label{sph__whirlpool_8h}\index{D:/Documentz/GitHub/ZENZO-\/Core/src/crypto/sph\_whirlpool.h@{D:/Documentz/GitHub/ZENZO-\/Core/src/crypto/sph\_whirlpool.h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sph\+\_\+types.\+h\char`\"{}}\newline
+
+
+\subsection{Detailed Description}
+W\+H\+I\+R\+L\+P\+O\+OL interface.
+
+W\+H\+I\+R\+L\+P\+O\+OL knows three variants, dubbed \char`\"{}\+W\+H\+I\+R\+L\+P\+O\+O\+L-\/0\char`\"{} (original version, published in 2000, studied by N\+E\+S\+S\+IE), \char`\"{}\+W\+H\+I\+R\+L\+P\+O\+O\+L-\/1\char`\"{} (first revision, 2001, with a new S-\/box) and \char`\"{}\+W\+H\+I\+R\+L\+P\+O\+O\+L\char`\"{} (current version, 2003, with a new diffusion matrix, also described as \char`\"{}plain
+\+W\+H\+I\+R\+L\+P\+O\+O\+L\char`\"{}). All three variants are implemented here.
+
+The original W\+H\+I\+R\+L\+P\+O\+OL (i.\+e. W\+H\+I\+R\+L\+P\+O\+O\+L-\/0) was published in\+: P. S. L. M. Barreto, V. Rijmen, \char`\"{}\+The Whirlpool Hashing Function\char`\"{}, First open N\+E\+S\+S\+IE Workshop, Leuven, Belgium, November 13--14, 2000.
+
+The current W\+H\+I\+R\+L\+P\+O\+OL specification and a reference implementation can be found on the W\+H\+I\+R\+L\+P\+O\+OL web page\+: \href{http://paginas.terra.com.br/informatica/paulobarreto/WhirlpoolPage.html}{\texttt{ http\+://paginas.\+terra.\+com.\+br/informatica/paulobarreto/\+Whirlpool\+Page.\+html}}
+
+==========================(L\+I\+C\+E\+N\+SE B\+E\+G\+IN)============================
+
+Copyright (c) 2007-\/2010 Projet R\+N\+RT S\+A\+P\+H\+IR
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.
+
+===========================(L\+I\+C\+E\+N\+SE E\+ND)=============================
+
+\begin{DoxyAuthor}{Author}
+Thomas Pornin \href{mailto:thomas.pornin@cryptolog.com}{\texttt{ thomas.\+pornin@cryptolog.\+com}} 
+\end{DoxyAuthor}

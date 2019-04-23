@@ -1,0 +1,37 @@
+digraph "CKey::GetPubKey"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node5 [label="CKey::GetPubKey",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="CCryptoKeyStore::EncryptKeys",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_crypto_key_store.html#a8c0f6b63fb04193df16243c4459b7c61",tooltip="will encrypt previously unencrypted keys"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="CKey::Derive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key.html#a5166e6f49c17c3ad47ac0fa89305307b",tooltip="Derive BIP32 child key."];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="CObfuScationSigner\l::SetKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfu_scation_signer.html#a4a12e41611db1b711d59ac4c3323dd36",tooltip="Set the private/public key values, returns true if successful."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="CActiveMasternode::\lManageStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_active_masternode.html#a8004b3b2100da7dcfedbd1e959633e51",tooltip="Manage status of main Masternode."];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="CActiveMasternode::\lRegister",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_active_masternode.html#a99e26870efec1ea98738cda1a5a85702",tooltip="Register remote Masternode."];
+  Node8 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="CObfuscationQueue::Sign",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfuscation_queue.html#a7d7be50e6c9ca531f4a4b69a3f7c0b79",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="CObfuscationPool::IsCompatible\lWithSession",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfuscation_pool.html#a820877f910e3f13086f3996acff68677",tooltip="Is this amount compatible with other client in the pool?"];
+  Node5 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="CObfuScationSigner\l::GetKeysFromSecret",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfu_scation_signer.html#a1e649a4b0bbeb5921ce2c37a240a98ae",tooltip="Set the private/public key values, returns true if successful."];
+  Node5 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="CPubKey::RecoverCompact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_pub_key.html#a169505e735a02db385486b0affeb565c",tooltip="Recover a public key from a compact signature."];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="CObfuScationSigner\l::VerifyMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfu_scation_signer.html#aaf770086b8defa6568da76bee8fb5269",tooltip="Verify the message, returns true if succcessful."];
+  Node15 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="CObfuscationQueue::\lCheckSignature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfuscation_queue.html#a2e19fb8d379c1d68e756de04e35b0d7d",tooltip="Check if we have a valid Masternode address."];
+  Node5 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="CPubKey::Decompress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_pub_key.html#a572689418fecf47b300a11519bc3da36",tooltip="Turn this public key into an uncompressed public key."];
+  Node5 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="CPubKey::Derive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_pub_key.html#a6e70269c1be731ace2fce8bfba9a0c36",tooltip="Derive BIP32 child pubkey."];
+  Node5 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="CWallet::GetVinAndKeysFrom\lOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__map_wallet.html#ga7621515b3195b8c8fb130c509725c9f2",tooltip="Extract txin information and keys from output."];
+}

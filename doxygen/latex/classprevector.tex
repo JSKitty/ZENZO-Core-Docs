@@ -1,0 +1,192 @@
+\hypertarget{classprevector}{}\section{prevector$<$ N, T, Size, Diff $>$ Class Template Reference}
+\label{classprevector}\index{prevector$<$ N, T, Size, Diff $>$@{prevector$<$ N, T, Size, Diff $>$}}
+
+
+{\ttfamily \#include $<$prevector.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classprevector_1_1const__iterator}{const\+\_\+iterator}}
+\item 
+class \mbox{\hyperlink{classprevector_1_1const__reverse__iterator}{const\+\_\+reverse\+\_\+iterator}}
+\item 
+class \mbox{\hyperlink{classprevector_1_1iterator}{iterator}}
+\item 
+class \mbox{\hyperlink{classprevector_1_1reverse__iterator}{reverse\+\_\+iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classprevector_a7e0da95e6d1c878f6eeb572f4fc12524}\label{classprevector_a7e0da95e6d1c878f6eeb572f4fc12524}} 
+typedef Size {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classprevector_a34ad7f610eefb33a8db9161cadf15dbe}\label{classprevector_a34ad7f610eefb33a8db9161cadf15dbe}} 
+typedef Diff {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{classprevector_aaab8519e15c3bdebdcc4bbc86fcff33c}\label{classprevector_aaab8519e15c3bdebdcc4bbc86fcff33c}} 
+typedef T {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classprevector_a457464223499e5cad0ab1b8123d82109}\label{classprevector_a457464223499e5cad0ab1b8123d82109}} 
+typedef value\+\_\+type \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classprevector_a381a4d3f4c3f74fde0c92ef21e755ef4}\label{classprevector_a381a4d3f4c3f74fde0c92ef21e755ef4}} 
+typedef const value\+\_\+type \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classprevector_ad9c63f0c4a27f8a3c1fc71e153cb93ad}\label{classprevector_ad9c63f0c4a27f8a3c1fc71e153cb93ad}} 
+typedef value\+\_\+type $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classprevector_ae322a41a56ba4c7aad96a2270b9f34fc}\label{classprevector_ae322a41a56ba4c7aad96a2270b9f34fc}} 
+typedef const value\+\_\+type $\ast$ {\bfseries const\+\_\+pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classprevector_aecbf4de43de23c1b01a2e39bf974f14e}\label{classprevector_aecbf4de43de23c1b01a2e39bf974f14e}} 
+void {\bfseries assign} (size\+\_\+type n, const T \&val)
+\item 
+\mbox{\Hypertarget{classprevector_a8bb8dd8d722522a475b6a36bc93cd8c1}\label{classprevector_a8bb8dd8d722522a475b6a36bc93cd8c1}} 
+{\footnotesize template$<$typename Input\+Iterator $>$ }\\void {\bfseries assign} (Input\+Iterator first, Input\+Iterator last)
+\item 
+\mbox{\Hypertarget{classprevector_a0c428e879c43daac251d6fbbc2ab7b54}\label{classprevector_a0c428e879c43daac251d6fbbc2ab7b54}} 
+{\bfseries prevector} (size\+\_\+type n)
+\item 
+\mbox{\Hypertarget{classprevector_a044c7d0d417476bb08cc8c9b33755cac}\label{classprevector_a044c7d0d417476bb08cc8c9b33755cac}} 
+{\bfseries prevector} (size\+\_\+type n, const T \&val=T())
+\item 
+\mbox{\Hypertarget{classprevector_a1f97e987163b5d6525168ed8e4229fe9}\label{classprevector_a1f97e987163b5d6525168ed8e4229fe9}} 
+{\footnotesize template$<$typename Input\+Iterator $>$ }\\{\bfseries prevector} (Input\+Iterator first, Input\+Iterator last)
+\item 
+\mbox{\Hypertarget{classprevector_abab195dce86a4b44bab7a5e9809a522c}\label{classprevector_abab195dce86a4b44bab7a5e9809a522c}} 
+{\bfseries prevector} (const \mbox{\hyperlink{classprevector}{prevector}}$<$ N, T, Size, Diff $>$ \&other)
+\item 
+\mbox{\Hypertarget{classprevector_a325af27672f21e7f2a01d8cdae7abba8}\label{classprevector_a325af27672f21e7f2a01d8cdae7abba8}} 
+\mbox{\hyperlink{classprevector}{prevector}} \& {\bfseries operator=} (const \mbox{\hyperlink{classprevector}{prevector}}$<$ N, T, Size, Diff $>$ \&other)
+\item 
+\mbox{\Hypertarget{classprevector_a626f7d206dbc24e5610631809762758b}\label{classprevector_a626f7d206dbc24e5610631809762758b}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classprevector_a0057a2d5ac2bbff636af5fbd87ae5235}\label{classprevector_a0057a2d5ac2bbff636af5fbd87ae5235}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classprevector_aa9210cbe708412a70868d6e0bca844c9}\label{classprevector_aa9210cbe708412a70868d6e0bca844c9}} 
+\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classprevector_af446957224d60c10d7a5c9fd226cb003}\label{classprevector_af446957224d60c10d7a5c9fd226cb003}} 
+\mbox{\hyperlink{classprevector_1_1const__iterator}{const\+\_\+iterator}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classprevector_aab7f6e13a3cac85cc340fc6b90c5365c}\label{classprevector_aab7f6e13a3cac85cc340fc6b90c5365c}} 
+\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classprevector_a84648e4cb6298fafb70ff9bdd438fcf5}\label{classprevector_a84648e4cb6298fafb70ff9bdd438fcf5}} 
+\mbox{\hyperlink{classprevector_1_1const__iterator}{const\+\_\+iterator}} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classprevector_ada5a19cb7dfa0271119cfd17e2bf51e1}\label{classprevector_ada5a19cb7dfa0271119cfd17e2bf51e1}} 
+\mbox{\hyperlink{classprevector_1_1reverse__iterator}{reverse\+\_\+iterator}} {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{classprevector_ac4c23aba698c67457c435b16ce63033d}\label{classprevector_ac4c23aba698c67457c435b16ce63033d}} 
+\mbox{\hyperlink{classprevector_1_1const__reverse__iterator}{const\+\_\+reverse\+\_\+iterator}} {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{classprevector_a6653d7df565bf668685a418714e3d712}\label{classprevector_a6653d7df565bf668685a418714e3d712}} 
+\mbox{\hyperlink{classprevector_1_1reverse__iterator}{reverse\+\_\+iterator}} {\bfseries rend} ()
+\item 
+\mbox{\Hypertarget{classprevector_add100a152fc099570286a8ba856ad5f2}\label{classprevector_add100a152fc099570286a8ba856ad5f2}} 
+\mbox{\hyperlink{classprevector_1_1const__reverse__iterator}{const\+\_\+reverse\+\_\+iterator}} {\bfseries rend} () const
+\item 
+\mbox{\Hypertarget{classprevector_a833f4c9e5c4804fb8ac57b708657af24}\label{classprevector_a833f4c9e5c4804fb8ac57b708657af24}} 
+size\+\_\+t {\bfseries capacity} () const
+\item 
+\mbox{\Hypertarget{classprevector_a06c929a30caa5842da7828e113030791}\label{classprevector_a06c929a30caa5842da7828e113030791}} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type pos)
+\item 
+\mbox{\Hypertarget{classprevector_a2aa1d5299104878a9e5441459927df72}\label{classprevector_a2aa1d5299104878a9e5441459927df72}} 
+const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type pos) const
+\item 
+\mbox{\Hypertarget{classprevector_ad2d97a45e0d2872260e868a540d31860}\label{classprevector_ad2d97a45e0d2872260e868a540d31860}} 
+void {\bfseries resize} (size\+\_\+type new\+\_\+size)
+\item 
+\mbox{\Hypertarget{classprevector_ab9a34e0210debc65efda453dbd0cbd27}\label{classprevector_ab9a34e0210debc65efda453dbd0cbd27}} 
+void {\bfseries reserve} (size\+\_\+type new\+\_\+capacity)
+\item 
+\mbox{\Hypertarget{classprevector_a3b82afa760e2aabd8373994a1316523e}\label{classprevector_a3b82afa760e2aabd8373994a1316523e}} 
+void {\bfseries shrink\+\_\+to\+\_\+fit} ()
+\item 
+\mbox{\Hypertarget{classprevector_a412f07b8bf5485dabe2fe9d6d5dfe763}\label{classprevector_a412f07b8bf5485dabe2fe9d6d5dfe763}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classprevector_ad4f368a9aa3f0f650e1b2a0894dafe51}\label{classprevector_ad4f368a9aa3f0f650e1b2a0894dafe51}} 
+\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} {\bfseries insert} (\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} pos, const T \&value)
+\item 
+\mbox{\Hypertarget{classprevector_aede9f795653c38dc88bb5fabd80f7b6f}\label{classprevector_aede9f795653c38dc88bb5fabd80f7b6f}} 
+void {\bfseries insert} (\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} pos, size\+\_\+type count, const T \&value)
+\item 
+\mbox{\Hypertarget{classprevector_aa14cdf5ea4f9f9b5256bca10e49e682c}\label{classprevector_aa14cdf5ea4f9f9b5256bca10e49e682c}} 
+{\footnotesize template$<$typename Input\+Iterator $>$ }\\void {\bfseries insert} (\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} pos, Input\+Iterator first, Input\+Iterator last)
+\item 
+\mbox{\Hypertarget{classprevector_a780af143deebcaaecb164fa1a2d98156}\label{classprevector_a780af143deebcaaecb164fa1a2d98156}} 
+\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} {\bfseries erase} (\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} pos)
+\item 
+\mbox{\Hypertarget{classprevector_a1bcffc1a855e24c2ac67b11f55d80d5f}\label{classprevector_a1bcffc1a855e24c2ac67b11f55d80d5f}} 
+\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} {\bfseries erase} (\mbox{\hyperlink{classprevector_1_1iterator}{iterator}} first, \mbox{\hyperlink{classprevector_1_1iterator}{iterator}} last)
+\item 
+\mbox{\Hypertarget{classprevector_af34b1eea43f461465aa29fe7ca67449d}\label{classprevector_af34b1eea43f461465aa29fe7ca67449d}} 
+void {\bfseries push\+\_\+back} (const T \&value)
+\item 
+\mbox{\Hypertarget{classprevector_a14e92ae67d4f110c66fe8c430f44a027}\label{classprevector_a14e92ae67d4f110c66fe8c430f44a027}} 
+void {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{classprevector_acb71926f63896b2bd6f4da4ffe515d19}\label{classprevector_acb71926f63896b2bd6f4da4ffe515d19}} 
+T \& {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{classprevector_a6c970d084ff59fcfb81185456acb4bb6}\label{classprevector_a6c970d084ff59fcfb81185456acb4bb6}} 
+const T \& {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classprevector_a9ff352b7b4f87eb70f0e79547d6f5314}\label{classprevector_a9ff352b7b4f87eb70f0e79547d6f5314}} 
+T \& {\bfseries back} ()
+\item 
+\mbox{\Hypertarget{classprevector_a5ae4f96ce4f204e135ffd88f2028c128}\label{classprevector_a5ae4f96ce4f204e135ffd88f2028c128}} 
+const T \& {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classprevector_a30e25ab1782f4a6258688334e5d1b817}\label{classprevector_a30e25ab1782f4a6258688334e5d1b817}} 
+void {\bfseries swap} (\mbox{\hyperlink{classprevector}{prevector}}$<$ N, T, Size, Diff $>$ \&other)
+\item 
+\mbox{\Hypertarget{classprevector_a6de6f6aff0a0ca527754020dbb26f7ab}\label{classprevector_a6de6f6aff0a0ca527754020dbb26f7ab}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classprevector}{prevector}}$<$ N, T, Size, Diff $>$ \&other) const
+\item 
+\mbox{\Hypertarget{classprevector_ab82592ccb4e1434025472492549e0c6d}\label{classprevector_ab82592ccb4e1434025472492549e0c6d}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classprevector}{prevector}}$<$ N, T, Size, Diff $>$ \&other) const
+\item 
+\mbox{\Hypertarget{classprevector_aa599ca1a3ab1fef2736b831ffed19d04}\label{classprevector_aa599ca1a3ab1fef2736b831ffed19d04}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{classprevector}{prevector}}$<$ N, T, Size, Diff $>$ \&other) const
+\item 
+\mbox{\Hypertarget{classprevector_ad4828b9a087bccd2f7f45dbbcf7cafe7}\label{classprevector_ad4828b9a087bccd2f7f45dbbcf7cafe7}} 
+size\+\_\+t {\bfseries allocated\+\_\+memory} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned int N, typename T, typename Size = uint32\+\_\+t, typename Diff = int32\+\_\+t$>$\newline
+class prevector$<$ N, T, Size, Diff $>$}
+
+Implements a drop-\/in replacement for std\+::vector$<$\+T$>$ which stores up to N elements directly (without heap allocation). The types Size and Diff are used to store element counts, and can be any unsigned + signed type.
+
+Storage layout is either\+:
+\begin{DoxyItemize}
+\item Direct allocation\+:
+\begin{DoxyItemize}
+\item Size \+\_\+size\+: the number of used elements (between 0 and N)
+\item T direct\mbox{[}N\mbox{]}\+: an array of N elements of type T (only the first \+\_\+size are initialized).
+\end{DoxyItemize}
+\item Indirect allocation\+:
+\begin{DoxyItemize}
+\item Size \+\_\+size\+: the number of used elements plus N + 1
+\item Size capacity\+: the number of allocated elements
+\item T$\ast$ indirect\+: a pointer to an array of capacity elements of type T (only the first \+\_\+size are initialized).
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+The data type T must be movable by memmove/realloc(). Once we switch to C++, move constructors can be used instead. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/prevector.\+h\end{DoxyCompactItemize}

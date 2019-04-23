@@ -1,0 +1,1452 @@
+\hypertarget{sph__haval_8h}{}\section{D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/crypto/sph\+\_\+haval.h File Reference}
+\label{sph__haval_8h}\index{D:/Documentz/GitHub/ZENZO-\/Core/src/crypto/sph\_haval.h@{D:/Documentz/GitHub/ZENZO-\/Core/src/crypto/sph\_haval.h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sph\+\_\+types.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_a6566ab1af5e33159dfbddc5bddec87a6}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval128\+\_\+3}}~128
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_a87614e72d35880a2e45989f7dc08fdb7}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval128\+\_\+4}}~128
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_ab58f3bb53ab00944e47e06d5f5965e74}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval128\+\_\+5}}~128
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_aaf27d1e974d0054cba6089f69fe04e8e}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval160\+\_\+3}}~160
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_afdafbffe5efbbb9cb8fee4168e54906c}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval160\+\_\+4}}~160
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_ae46fa31ac7c2233d259d60aa1bd0a32b}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval160\+\_\+5}}~160
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_a7d38ae85191334b4b823d727b1178310}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval192\+\_\+3}}~192
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_ab2eb2674346d14adfb68c5298d91e9d0}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval192\+\_\+4}}~192
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_a4cca5a9b360f4260ef519443f4b7e8ed}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval192\+\_\+5}}~192
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_ac699591e932ae4ce9edc76e4c2a877e6}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval224\+\_\+3}}~224
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_adf84e49d2af75c297895838b0777bc32}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval224\+\_\+4}}~224
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_a5089a8a5b5268e001fb1bad4ba586581}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval224\+\_\+5}}~224
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_a92f4819107a3ecd3f2bebc80738da480}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval256\+\_\+3}}~256
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_a153340daffab6e964d7564a5f47a020f}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval256\+\_\+4}}~256
+\item 
+\#define \mbox{\hyperlink{sph__haval_8h_ab378eac8c78a9d217704a8479158c13a}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval256\+\_\+5}}~256
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_af367124146a73bbb4beaf880c68d6a2d}{sph\+\_\+haval128\+\_\+3\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_aa65646bf0d6291f7549ed49532c0859c}{sph\+\_\+haval128\+\_\+4\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_aef6d1a93f1cae0ef525081b25a841f69}{sph\+\_\+haval128\+\_\+5\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_ae3e415cef1b3a3cf6d4a10cdef5fc21b}{sph\+\_\+haval160\+\_\+3\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_ac49122e7de97c791c9e618da4a9b892f}{sph\+\_\+haval160\+\_\+4\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_af7ab4a92a5f616b9d3ddb4f1bb4706fe}{sph\+\_\+haval160\+\_\+5\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_ad76e94e6ecea41ca308131287abbd453}{sph\+\_\+haval192\+\_\+3\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a8d921ce5963297db828c2e2a85160c35}{sph\+\_\+haval192\+\_\+4\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a4d61ca87df88ffe88c59b86d73f94023}{sph\+\_\+haval192\+\_\+5\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_acf1157e57cd3f8bbf25699c93f5053da}{sph\+\_\+haval224\+\_\+3\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_adb69bded14cbe206a30d08271f9352fa}{sph\+\_\+haval224\+\_\+4\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a37ade660f7ea30400190a212ff4e60b1}{sph\+\_\+haval224\+\_\+5\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a8f7de869146cdf91a000551231001617}{sph\+\_\+haval256\+\_\+3\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a86e47b7bbd76965eacb6a2a30fe8248f}{sph\+\_\+haval256\+\_\+4\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a0fbdc7e162f9832877ffd7d5810ff21b}{sph\+\_\+haval256\+\_\+5\+\_\+context}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a97bfc1e9d048d1f6e5505527a32f53bc}{sph\+\_\+haval128\+\_\+3\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a0c223fedfa18fe2be493e4f276b5aede}{sph\+\_\+haval128\+\_\+3}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_aaed1b0fb5f5b2f98c3f5179501de8e7d}{sph\+\_\+haval128\+\_\+3\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ab28b8ad206a96c058d088ecee9355857}{sph\+\_\+haval128\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a0aa4226a1579ac5a2767ccbe59b340fa}{sph\+\_\+haval128\+\_\+4\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_abee769c1fc556562430acd9e311ad578}{sph\+\_\+haval128\+\_\+4}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a619d9195ff1f1ebbff30aa6dd325d211}{sph\+\_\+haval128\+\_\+4\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a9080af3e8eb5475ffcacbcaf8053b744}{sph\+\_\+haval128\+\_\+4\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_adb1c53f44839654b11470c946a1c65a8}{sph\+\_\+haval128\+\_\+5\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_aed8b2c71702ce555d6314ef8a4bd275f}{sph\+\_\+haval128\+\_\+5}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ad0cb97e02f9b5299c045b8347fdfac97}{sph\+\_\+haval128\+\_\+5\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a785b6bef2e1554f056eca3b436f89369}{sph\+\_\+haval128\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a2fcc401332f79b125c581d3c90bda14d}{sph\+\_\+haval160\+\_\+3\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a7f4624148dcb39a5525d0567ceb97e02}{sph\+\_\+haval160\+\_\+3}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a6600bef16e1c9b36cc7791c80b595a6b}{sph\+\_\+haval160\+\_\+3\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a2fd12367e784029b77198cf4525334dc}{sph\+\_\+haval160\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a2a817499926eb781d2a576c2a883a1aa}{sph\+\_\+haval160\+\_\+4\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a5875ec97daa77c5f3c8c4781abccf086}{sph\+\_\+haval160\+\_\+4}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a36b5108446181627136e96d5d6753e61}{sph\+\_\+haval160\+\_\+4\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a5aa0b40d3f6c5445348796aa26b06111}{sph\+\_\+haval160\+\_\+5\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a75c1ea042c2aaa29396292870723274d}{sph\+\_\+haval160\+\_\+5}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a44c89f408a258d46fbb5c4a8183e0c78}{sph\+\_\+haval160\+\_\+5\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_acac70255293c678ab1105b563c1cb8d9}{sph\+\_\+haval160\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a4bb8e4b4a023767c3b94acec84007d73}{sph\+\_\+haval192\+\_\+3\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a596fe2cec90956f667679079fc04b9c3}{sph\+\_\+haval192\+\_\+3}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a238cc6ff3ce791456fbe0b5557cc383f}{sph\+\_\+haval192\+\_\+3\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a0c556aef11bb380ec28656a94b5f4605}{sph\+\_\+haval192\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a5b36e600635b9cd4c1e04d7fa7d9605d}{sph\+\_\+haval192\+\_\+4\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a4f40969f0baaec457a9a01c1cb11af8c}{sph\+\_\+haval192\+\_\+4}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_aad68d957b663970e4b3897aa05eac28c}{sph\+\_\+haval192\+\_\+4\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a5b2b42f14cb67f29c77ee29794fe02a6}{sph\+\_\+haval192\+\_\+4\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a6a76545063eca775308ff9b57b59ed24}{sph\+\_\+haval192\+\_\+5\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_aa01935e7084dbb281ac6ee30f1321ca4}{sph\+\_\+haval192\+\_\+5}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ad4a98c330ac620702ff0862e2381a6ff}{sph\+\_\+haval192\+\_\+5\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_aaa004124bd3188f03633b8b701b08a3b}{sph\+\_\+haval192\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ae7538ce2f51535aaa724f6c365f328c8}{sph\+\_\+haval224\+\_\+3\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a51e48bd1d3ecbf79248712e3dd959494}{sph\+\_\+haval224\+\_\+3}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ab86f7b2e9b8b0443b4997015ce600af3}{sph\+\_\+haval224\+\_\+3\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_aab0baf31e736678bb3482ea927ab654e}{sph\+\_\+haval224\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a67edea48177c1abf83f14a1fae0b202d}{sph\+\_\+haval224\+\_\+4\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a9b1250c04a76ab0909c87f1addcf6bcb}{sph\+\_\+haval224\+\_\+4}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a1300486b4bbbdea2f5689d3ce93ef6ef}{sph\+\_\+haval224\+\_\+4\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a721823fe2126a6bfd7d10a6ec7f74ac3}{sph\+\_\+haval224\+\_\+4\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a9f6a543fc7844d6f2ba35de14c37ac14}{sph\+\_\+haval224\+\_\+5\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a5045220877738a223aec74680a1f55b8}{sph\+\_\+haval224\+\_\+5}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ad1c9618edcf3d2f471443db62c0a2284}{sph\+\_\+haval224\+\_\+5\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ae18b7ec999d97d77917de7f031ed0145}{sph\+\_\+haval224\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ab7d4c3b3d5e984407215ccac7228b3de}{sph\+\_\+haval256\+\_\+3\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_aca47290652e0ea0faf9a637093890711}{sph\+\_\+haval256\+\_\+3}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a5e48594d5f8eeadfe6641b07915fa59b}{sph\+\_\+haval256\+\_\+3\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a4899d202efd669d59c2c4ec3515ec168}{sph\+\_\+haval256\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_ad70d8ed3de4dc22d9c49e62baef4cda1}{sph\+\_\+haval256\+\_\+4\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a2eaf99e5bb524ad7d8f5a8a90611d21c}{sph\+\_\+haval256\+\_\+4}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_acbb67fc27b14789346cb7e0fd82c5862}{sph\+\_\+haval256\+\_\+4\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a117bc452f1891077cc6c388279700191}{sph\+\_\+haval256\+\_\+4\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_aafe8ac09e0a7ec4a950cfa4fd9f959e2}{sph\+\_\+haval256\+\_\+5\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a79980c7ef264dd52d4d39da0f141d81f}{sph\+\_\+haval256\+\_\+5}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a5e0ee6fd552a6795ffc4804ece5342e9}{sph\+\_\+haval256\+\_\+5\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_af0740ef632b8f99796fb5c6aca84da54}{sph\+\_\+haval256\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a8f7567b2f58a47e6e29059e1da2b3440}{sph\+\_\+haval\+\_\+3\+\_\+comp}} (const sph\+\_\+u32 msg\mbox{[}32\mbox{]}, sph\+\_\+u32 val\mbox{[}8\mbox{]})
+\item 
+void \mbox{\hyperlink{sph__haval_8h_af2ba3f89acff35dc150d5696f4d853ea}{sph\+\_\+haval\+\_\+4\+\_\+comp}} (const sph\+\_\+u32 msg\mbox{[}32\mbox{]}, sph\+\_\+u32 val\mbox{[}8\mbox{]})
+\item 
+void \mbox{\hyperlink{sph__haval_8h_a1d2858551d51b2ec13c125cd48297a5c}{sph\+\_\+haval\+\_\+5\+\_\+comp}} (const sph\+\_\+u32 msg\mbox{[}32\mbox{]}, sph\+\_\+u32 val\mbox{[}8\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+A\+V\+AL interface.
+
+H\+A\+V\+AL is actually a family of 15 hash functions, depending on whether the internal computation uses 3, 4 or 5 passes, and on the output length, which is 128, 160, 192, 224 or 256 bits. This implementation provides interface functions for all 15, which internally map to three cores (depending on the number of passes). Note that output lengths other than 256 bits are not obtained by a simple truncation of a longer result; the requested length is encoded within the padding data.
+
+H\+A\+V\+AL was published in\+: Yuliang Zheng, Josef Pieprzyk and Jennifer Seberry\+: \char`\"{}\+H\+A\+V\+A\+L -\/-\/ a one-\/way hashing algorithm with variable length
+of output\char`\"{}, Advances in Cryptology -- A\+U\+S\+C\+R\+Y\+PT\textquotesingle{}92, Lecture Notes in Computer Science, Vol.\+718, pp.\+83-\/104, Springer-\/\+Verlag, 1993.
+
+This paper, and a reference implementation, are available on the Calyptix web site\+: \href{http://labs.calyptix.com/haval.php}{\texttt{ http\+://labs.\+calyptix.\+com/haval.\+php}}
+
+The H\+A\+V\+AL reference paper is quite unclear on the data encoding details, i.\+e. endianness (both byte order within a 32-\/bit word, and word order within a message block). This implementation has been made compatible with the reference implementation referenced above.
+
+\begin{DoxyWarning}{Warning}
+A collision for H\+A\+V\+A\+L-\/128/3 (H\+A\+V\+AL with three passes and 128-\/bit output) has been published; this function is thus considered as cryptographically broken. The status for other variants is unclear; use only with care.
+\end{DoxyWarning}
+==========================(L\+I\+C\+E\+N\+SE B\+E\+G\+IN)============================
+
+Copyright (c) 2007-\/2010 Projet R\+N\+RT S\+A\+P\+H\+IR
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.
+
+===========================(L\+I\+C\+E\+N\+SE E\+ND)=============================
+
+\begin{DoxyAuthor}{Author}
+Thomas Pornin \href{mailto:thomas.pornin@cryptolog.com}{\texttt{ thomas.\+pornin@cryptolog.\+com}} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{sph__haval_8h_a6566ab1af5e33159dfbddc5bddec87a6}\label{sph__haval_8h_a6566ab1af5e33159dfbddc5bddec87a6}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval128\_3@{SPH\_SIZE\_haval128\_3}}
+\index{SPH\_SIZE\_haval128\_3@{SPH\_SIZE\_haval128\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval128\_3}{SPH\_SIZE\_haval128\_3}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval128\+\_\+3~128}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/128/3. \mbox{\Hypertarget{sph__haval_8h_a87614e72d35880a2e45989f7dc08fdb7}\label{sph__haval_8h_a87614e72d35880a2e45989f7dc08fdb7}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval128\_4@{SPH\_SIZE\_haval128\_4}}
+\index{SPH\_SIZE\_haval128\_4@{SPH\_SIZE\_haval128\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval128\_4}{SPH\_SIZE\_haval128\_4}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval128\+\_\+4~128}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/128/4. \mbox{\Hypertarget{sph__haval_8h_ab58f3bb53ab00944e47e06d5f5965e74}\label{sph__haval_8h_ab58f3bb53ab00944e47e06d5f5965e74}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval128\_5@{SPH\_SIZE\_haval128\_5}}
+\index{SPH\_SIZE\_haval128\_5@{SPH\_SIZE\_haval128\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval128\_5}{SPH\_SIZE\_haval128\_5}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval128\+\_\+5~128}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/128/5. \mbox{\Hypertarget{sph__haval_8h_aaf27d1e974d0054cba6089f69fe04e8e}\label{sph__haval_8h_aaf27d1e974d0054cba6089f69fe04e8e}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval160\_3@{SPH\_SIZE\_haval160\_3}}
+\index{SPH\_SIZE\_haval160\_3@{SPH\_SIZE\_haval160\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval160\_3}{SPH\_SIZE\_haval160\_3}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval160\+\_\+3~160}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/160/3. \mbox{\Hypertarget{sph__haval_8h_afdafbffe5efbbb9cb8fee4168e54906c}\label{sph__haval_8h_afdafbffe5efbbb9cb8fee4168e54906c}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval160\_4@{SPH\_SIZE\_haval160\_4}}
+\index{SPH\_SIZE\_haval160\_4@{SPH\_SIZE\_haval160\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval160\_4}{SPH\_SIZE\_haval160\_4}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval160\+\_\+4~160}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/160/4. \mbox{\Hypertarget{sph__haval_8h_ae46fa31ac7c2233d259d60aa1bd0a32b}\label{sph__haval_8h_ae46fa31ac7c2233d259d60aa1bd0a32b}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval160\_5@{SPH\_SIZE\_haval160\_5}}
+\index{SPH\_SIZE\_haval160\_5@{SPH\_SIZE\_haval160\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval160\_5}{SPH\_SIZE\_haval160\_5}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval160\+\_\+5~160}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/160/5. \mbox{\Hypertarget{sph__haval_8h_a7d38ae85191334b4b823d727b1178310}\label{sph__haval_8h_a7d38ae85191334b4b823d727b1178310}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval192\_3@{SPH\_SIZE\_haval192\_3}}
+\index{SPH\_SIZE\_haval192\_3@{SPH\_SIZE\_haval192\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval192\_3}{SPH\_SIZE\_haval192\_3}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval192\+\_\+3~192}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/192/3. \mbox{\Hypertarget{sph__haval_8h_ab2eb2674346d14adfb68c5298d91e9d0}\label{sph__haval_8h_ab2eb2674346d14adfb68c5298d91e9d0}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval192\_4@{SPH\_SIZE\_haval192\_4}}
+\index{SPH\_SIZE\_haval192\_4@{SPH\_SIZE\_haval192\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval192\_4}{SPH\_SIZE\_haval192\_4}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval192\+\_\+4~192}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/192/4. \mbox{\Hypertarget{sph__haval_8h_a4cca5a9b360f4260ef519443f4b7e8ed}\label{sph__haval_8h_a4cca5a9b360f4260ef519443f4b7e8ed}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval192\_5@{SPH\_SIZE\_haval192\_5}}
+\index{SPH\_SIZE\_haval192\_5@{SPH\_SIZE\_haval192\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval192\_5}{SPH\_SIZE\_haval192\_5}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval192\+\_\+5~192}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/192/5. \mbox{\Hypertarget{sph__haval_8h_ac699591e932ae4ce9edc76e4c2a877e6}\label{sph__haval_8h_ac699591e932ae4ce9edc76e4c2a877e6}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval224\_3@{SPH\_SIZE\_haval224\_3}}
+\index{SPH\_SIZE\_haval224\_3@{SPH\_SIZE\_haval224\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval224\_3}{SPH\_SIZE\_haval224\_3}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval224\+\_\+3~224}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/224/3. \mbox{\Hypertarget{sph__haval_8h_adf84e49d2af75c297895838b0777bc32}\label{sph__haval_8h_adf84e49d2af75c297895838b0777bc32}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval224\_4@{SPH\_SIZE\_haval224\_4}}
+\index{SPH\_SIZE\_haval224\_4@{SPH\_SIZE\_haval224\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval224\_4}{SPH\_SIZE\_haval224\_4}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval224\+\_\+4~224}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/224/4. \mbox{\Hypertarget{sph__haval_8h_a5089a8a5b5268e001fb1bad4ba586581}\label{sph__haval_8h_a5089a8a5b5268e001fb1bad4ba586581}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval224\_5@{SPH\_SIZE\_haval224\_5}}
+\index{SPH\_SIZE\_haval224\_5@{SPH\_SIZE\_haval224\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval224\_5}{SPH\_SIZE\_haval224\_5}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval224\+\_\+5~224}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/224/5. \mbox{\Hypertarget{sph__haval_8h_a92f4819107a3ecd3f2bebc80738da480}\label{sph__haval_8h_a92f4819107a3ecd3f2bebc80738da480}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval256\_3@{SPH\_SIZE\_haval256\_3}}
+\index{SPH\_SIZE\_haval256\_3@{SPH\_SIZE\_haval256\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval256\_3}{SPH\_SIZE\_haval256\_3}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval256\+\_\+3~256}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/256/3. \mbox{\Hypertarget{sph__haval_8h_a153340daffab6e964d7564a5f47a020f}\label{sph__haval_8h_a153340daffab6e964d7564a5f47a020f}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval256\_4@{SPH\_SIZE\_haval256\_4}}
+\index{SPH\_SIZE\_haval256\_4@{SPH\_SIZE\_haval256\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval256\_4}{SPH\_SIZE\_haval256\_4}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval256\+\_\+4~256}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/256/4. \mbox{\Hypertarget{sph__haval_8h_ab378eac8c78a9d217704a8479158c13a}\label{sph__haval_8h_ab378eac8c78a9d217704a8479158c13a}} 
+\index{sph\_haval.h@{sph\_haval.h}!SPH\_SIZE\_haval256\_5@{SPH\_SIZE\_haval256\_5}}
+\index{SPH\_SIZE\_haval256\_5@{SPH\_SIZE\_haval256\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_haval256\_5}{SPH\_SIZE\_haval256\_5}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+haval256\+\_\+5~256}
+
+Output size (in bits) for H\+A\+V\+A\+L-\/256/5. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{sph__haval_8h_af367124146a73bbb4beaf880c68d6a2d}\label{sph__haval_8h_af367124146a73bbb4beaf880c68d6a2d}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_3\_context@{sph\_haval128\_3\_context}}
+\index{sph\_haval128\_3\_context@{sph\_haval128\_3\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_3\_context}{sph\_haval128\_3\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_af367124146a73bbb4beaf880c68d6a2d}{sph\+\_\+haval128\+\_\+3\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/128/3 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_aa65646bf0d6291f7549ed49532c0859c}\label{sph__haval_8h_aa65646bf0d6291f7549ed49532c0859c}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_4\_context@{sph\_haval128\_4\_context}}
+\index{sph\_haval128\_4\_context@{sph\_haval128\_4\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_4\_context}{sph\_haval128\_4\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_aa65646bf0d6291f7549ed49532c0859c}{sph\+\_\+haval128\+\_\+4\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/128/4 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_aef6d1a93f1cae0ef525081b25a841f69}\label{sph__haval_8h_aef6d1a93f1cae0ef525081b25a841f69}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_5\_context@{sph\_haval128\_5\_context}}
+\index{sph\_haval128\_5\_context@{sph\_haval128\_5\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_5\_context}{sph\_haval128\_5\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_aef6d1a93f1cae0ef525081b25a841f69}{sph\+\_\+haval128\+\_\+5\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/128/5 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_ae3e415cef1b3a3cf6d4a10cdef5fc21b}\label{sph__haval_8h_ae3e415cef1b3a3cf6d4a10cdef5fc21b}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_3\_context@{sph\_haval160\_3\_context}}
+\index{sph\_haval160\_3\_context@{sph\_haval160\_3\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_3\_context}{sph\_haval160\_3\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_ae3e415cef1b3a3cf6d4a10cdef5fc21b}{sph\+\_\+haval160\+\_\+3\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/160/3 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_ac49122e7de97c791c9e618da4a9b892f}\label{sph__haval_8h_ac49122e7de97c791c9e618da4a9b892f}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_4\_context@{sph\_haval160\_4\_context}}
+\index{sph\_haval160\_4\_context@{sph\_haval160\_4\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_4\_context}{sph\_haval160\_4\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_ac49122e7de97c791c9e618da4a9b892f}{sph\+\_\+haval160\+\_\+4\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/160/4 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_af7ab4a92a5f616b9d3ddb4f1bb4706fe}\label{sph__haval_8h_af7ab4a92a5f616b9d3ddb4f1bb4706fe}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_5\_context@{sph\_haval160\_5\_context}}
+\index{sph\_haval160\_5\_context@{sph\_haval160\_5\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_5\_context}{sph\_haval160\_5\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_af7ab4a92a5f616b9d3ddb4f1bb4706fe}{sph\+\_\+haval160\+\_\+5\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/160/5 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_ad76e94e6ecea41ca308131287abbd453}\label{sph__haval_8h_ad76e94e6ecea41ca308131287abbd453}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_3\_context@{sph\_haval192\_3\_context}}
+\index{sph\_haval192\_3\_context@{sph\_haval192\_3\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_3\_context}{sph\_haval192\_3\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_ad76e94e6ecea41ca308131287abbd453}{sph\+\_\+haval192\+\_\+3\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/192/3 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_a8d921ce5963297db828c2e2a85160c35}\label{sph__haval_8h_a8d921ce5963297db828c2e2a85160c35}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_4\_context@{sph\_haval192\_4\_context}}
+\index{sph\_haval192\_4\_context@{sph\_haval192\_4\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_4\_context}{sph\_haval192\_4\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a8d921ce5963297db828c2e2a85160c35}{sph\+\_\+haval192\+\_\+4\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/192/4 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_a4d61ca87df88ffe88c59b86d73f94023}\label{sph__haval_8h_a4d61ca87df88ffe88c59b86d73f94023}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_5\_context@{sph\_haval192\_5\_context}}
+\index{sph\_haval192\_5\_context@{sph\_haval192\_5\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_5\_context}{sph\_haval192\_5\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a4d61ca87df88ffe88c59b86d73f94023}{sph\+\_\+haval192\+\_\+5\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/192/5 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_acf1157e57cd3f8bbf25699c93f5053da}\label{sph__haval_8h_acf1157e57cd3f8bbf25699c93f5053da}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_3\_context@{sph\_haval224\_3\_context}}
+\index{sph\_haval224\_3\_context@{sph\_haval224\_3\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_3\_context}{sph\_haval224\_3\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_acf1157e57cd3f8bbf25699c93f5053da}{sph\+\_\+haval224\+\_\+3\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/224/3 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_adb69bded14cbe206a30d08271f9352fa}\label{sph__haval_8h_adb69bded14cbe206a30d08271f9352fa}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_4\_context@{sph\_haval224\_4\_context}}
+\index{sph\_haval224\_4\_context@{sph\_haval224\_4\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_4\_context}{sph\_haval224\_4\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_adb69bded14cbe206a30d08271f9352fa}{sph\+\_\+haval224\+\_\+4\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/224/4 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_a37ade660f7ea30400190a212ff4e60b1}\label{sph__haval_8h_a37ade660f7ea30400190a212ff4e60b1}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_5\_context@{sph\_haval224\_5\_context}}
+\index{sph\_haval224\_5\_context@{sph\_haval224\_5\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_5\_context}{sph\_haval224\_5\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a37ade660f7ea30400190a212ff4e60b1}{sph\+\_\+haval224\+\_\+5\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/224/5 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_a8f7de869146cdf91a000551231001617}\label{sph__haval_8h_a8f7de869146cdf91a000551231001617}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_3\_context@{sph\_haval256\_3\_context}}
+\index{sph\_haval256\_3\_context@{sph\_haval256\_3\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_3\_context}{sph\_haval256\_3\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a8f7de869146cdf91a000551231001617}{sph\+\_\+haval256\+\_\+3\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/256/3 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_a86e47b7bbd76965eacb6a2a30fe8248f}\label{sph__haval_8h_a86e47b7bbd76965eacb6a2a30fe8248f}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_4\_context@{sph\_haval256\_4\_context}}
+\index{sph\_haval256\_4\_context@{sph\_haval256\_4\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_4\_context}{sph\_haval256\_4\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a86e47b7bbd76965eacb6a2a30fe8248f}{sph\+\_\+haval256\+\_\+4\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/256/4 context (identical to the common context). \mbox{\Hypertarget{sph__haval_8h_a0fbdc7e162f9832877ffd7d5810ff21b}\label{sph__haval_8h_a0fbdc7e162f9832877ffd7d5810ff21b}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_5\_context@{sph\_haval256\_5\_context}}
+\index{sph\_haval256\_5\_context@{sph\_haval256\_5\_context}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_5\_context}{sph\_haval256\_5\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__haval__context}{sph\+\_\+haval\+\_\+context}} \mbox{\hyperlink{sph__haval_8h_a0fbdc7e162f9832877ffd7d5810ff21b}{sph\+\_\+haval256\+\_\+5\+\_\+context}}}
+
+Type for a H\+A\+V\+A\+L-\/256/5 context (identical to the common context). 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sph__haval_8h_a0c223fedfa18fe2be493e4f276b5aede}\label{sph__haval_8h_a0c223fedfa18fe2be493e4f276b5aede}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_3@{sph\_haval128\_3}}
+\index{sph\_haval128\_3@{sph\_haval128\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_3()}{sph\_haval128\_3()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+3 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/128/3. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/3 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ab28b8ad206a96c058d088ecee9355857}\label{sph__haval_8h_ab28b8ad206a96c058d088ecee9355857}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_3\_addbits\_and\_close@{sph\_haval128\_3\_addbits\_and\_close}}
+\index{sph\_haval128\_3\_addbits\_and\_close@{sph\_haval128\_3\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_3\_addbits\_and\_close()}{sph\_haval128\_3\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/128/3 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (16 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/3 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_aaed1b0fb5f5b2f98c3f5179501de8e7d}\label{sph__haval_8h_aaed1b0fb5f5b2f98c3f5179501de8e7d}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_3\_close@{sph\_haval128\_3\_close}}
+\index{sph\_haval128\_3\_close@{sph\_haval128\_3\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_3\_close()}{sph\_haval128\_3\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+3\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/128/3 computation. The output buffer must be wide enough to accomodate the result (16 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/3 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a97bfc1e9d048d1f6e5505527a32f53bc}\label{sph__haval_8h_a97bfc1e9d048d1f6e5505527a32f53bc}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_3\_init@{sph\_haval128\_3\_init}}
+\index{sph\_haval128\_3\_init@{sph\_haval128\_3\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_3\_init()}{sph\_haval128\_3\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+3\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/128/3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval128\+\_\+3\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_abee769c1fc556562430acd9e311ad578}\label{sph__haval_8h_abee769c1fc556562430acd9e311ad578}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_4@{sph\_haval128\_4}}
+\index{sph\_haval128\_4@{sph\_haval128\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_4()}{sph\_haval128\_4()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+4 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/128/4. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/4 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a9080af3e8eb5475ffcacbcaf8053b744}\label{sph__haval_8h_a9080af3e8eb5475ffcacbcaf8053b744}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_4\_addbits\_and\_close@{sph\_haval128\_4\_addbits\_and\_close}}
+\index{sph\_haval128\_4\_addbits\_and\_close@{sph\_haval128\_4\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_4\_addbits\_and\_close()}{sph\_haval128\_4\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+4\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/128/4 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (16 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/4 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a619d9195ff1f1ebbff30aa6dd325d211}\label{sph__haval_8h_a619d9195ff1f1ebbff30aa6dd325d211}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_4\_close@{sph\_haval128\_4\_close}}
+\index{sph\_haval128\_4\_close@{sph\_haval128\_4\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_4\_close()}{sph\_haval128\_4\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+4\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/128/4 computation. The output buffer must be wide enough to accomodate the result (16 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/4 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a0aa4226a1579ac5a2767ccbe59b340fa}\label{sph__haval_8h_a0aa4226a1579ac5a2767ccbe59b340fa}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_4\_init@{sph\_haval128\_4\_init}}
+\index{sph\_haval128\_4\_init@{sph\_haval128\_4\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_4\_init()}{sph\_haval128\_4\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+4\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/128/4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval128\+\_\+4\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_aed8b2c71702ce555d6314ef8a4bd275f}\label{sph__haval_8h_aed8b2c71702ce555d6314ef8a4bd275f}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_5@{sph\_haval128\_5}}
+\index{sph\_haval128\_5@{sph\_haval128\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_5()}{sph\_haval128\_5()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+5 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/128/5. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/5 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a785b6bef2e1554f056eca3b436f89369}\label{sph__haval_8h_a785b6bef2e1554f056eca3b436f89369}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_5\_addbits\_and\_close@{sph\_haval128\_5\_addbits\_and\_close}}
+\index{sph\_haval128\_5\_addbits\_and\_close@{sph\_haval128\_5\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_5\_addbits\_and\_close()}{sph\_haval128\_5\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/128/5 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (16 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/5 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ad0cb97e02f9b5299c045b8347fdfac97}\label{sph__haval_8h_ad0cb97e02f9b5299c045b8347fdfac97}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_5\_close@{sph\_haval128\_5\_close}}
+\index{sph\_haval128\_5\_close@{sph\_haval128\_5\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_5\_close()}{sph\_haval128\_5\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+5\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/128/5 computation. The output buffer must be wide enough to accomodate the result (16 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/128/5 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_adb1c53f44839654b11470c946a1c65a8}\label{sph__haval_8h_adb1c53f44839654b11470c946a1c65a8}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval128\_5\_init@{sph\_haval128\_5\_init}}
+\index{sph\_haval128\_5\_init@{sph\_haval128\_5\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval128\_5\_init()}{sph\_haval128\_5\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval128\+\_\+5\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/128/5.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval128\+\_\+5\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a7f4624148dcb39a5525d0567ceb97e02}\label{sph__haval_8h_a7f4624148dcb39a5525d0567ceb97e02}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_3@{sph\_haval160\_3}}
+\index{sph\_haval160\_3@{sph\_haval160\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_3()}{sph\_haval160\_3()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+3 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/160/3. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/3 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a2fd12367e784029b77198cf4525334dc}\label{sph__haval_8h_a2fd12367e784029b77198cf4525334dc}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_3\_addbits\_and\_close@{sph\_haval160\_3\_addbits\_and\_close}}
+\index{sph\_haval160\_3\_addbits\_and\_close@{sph\_haval160\_3\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_3\_addbits\_and\_close()}{sph\_haval160\_3\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/160/3 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (20 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/3 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer\\
+\hline
+\end{DoxyParams}
+Close a H\+A\+V\+A\+L-\/160/4 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (20 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/4 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a6600bef16e1c9b36cc7791c80b595a6b}\label{sph__haval_8h_a6600bef16e1c9b36cc7791c80b595a6b}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_3\_close@{sph\_haval160\_3\_close}}
+\index{sph\_haval160\_3\_close@{sph\_haval160\_3\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_3\_close()}{sph\_haval160\_3\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+3\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/160/3 computation. The output buffer must be wide enough to accomodate the result (20 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/3 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a2fcc401332f79b125c581d3c90bda14d}\label{sph__haval_8h_a2fcc401332f79b125c581d3c90bda14d}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_3\_init@{sph\_haval160\_3\_init}}
+\index{sph\_haval160\_3\_init@{sph\_haval160\_3\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_3\_init()}{sph\_haval160\_3\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+3\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/160/3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval160\+\_\+3\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a5875ec97daa77c5f3c8c4781abccf086}\label{sph__haval_8h_a5875ec97daa77c5f3c8c4781abccf086}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_4@{sph\_haval160\_4}}
+\index{sph\_haval160\_4@{sph\_haval160\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_4()}{sph\_haval160\_4()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+4 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/160/4. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/4 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a36b5108446181627136e96d5d6753e61}\label{sph__haval_8h_a36b5108446181627136e96d5d6753e61}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_4\_close@{sph\_haval160\_4\_close}}
+\index{sph\_haval160\_4\_close@{sph\_haval160\_4\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_4\_close()}{sph\_haval160\_4\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+4\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/160/4 computation. The output buffer must be wide enough to accomodate the result (20 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/4 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a2a817499926eb781d2a576c2a883a1aa}\label{sph__haval_8h_a2a817499926eb781d2a576c2a883a1aa}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_4\_init@{sph\_haval160\_4\_init}}
+\index{sph\_haval160\_4\_init@{sph\_haval160\_4\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_4\_init()}{sph\_haval160\_4\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+4\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/160/4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval160\+\_\+4\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a75c1ea042c2aaa29396292870723274d}\label{sph__haval_8h_a75c1ea042c2aaa29396292870723274d}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_5@{sph\_haval160\_5}}
+\index{sph\_haval160\_5@{sph\_haval160\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_5()}{sph\_haval160\_5()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+5 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/160/5. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/5 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_acac70255293c678ab1105b563c1cb8d9}\label{sph__haval_8h_acac70255293c678ab1105b563c1cb8d9}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_5\_addbits\_and\_close@{sph\_haval160\_5\_addbits\_and\_close}}
+\index{sph\_haval160\_5\_addbits\_and\_close@{sph\_haval160\_5\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_5\_addbits\_and\_close()}{sph\_haval160\_5\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/160/5 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (20 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/5 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a44c89f408a258d46fbb5c4a8183e0c78}\label{sph__haval_8h_a44c89f408a258d46fbb5c4a8183e0c78}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_5\_close@{sph\_haval160\_5\_close}}
+\index{sph\_haval160\_5\_close@{sph\_haval160\_5\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_5\_close()}{sph\_haval160\_5\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+5\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/160/5 computation. The output buffer must be wide enough to accomodate the result (20 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/160/5 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a5aa0b40d3f6c5445348796aa26b06111}\label{sph__haval_8h_a5aa0b40d3f6c5445348796aa26b06111}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval160\_5\_init@{sph\_haval160\_5\_init}}
+\index{sph\_haval160\_5\_init@{sph\_haval160\_5\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval160\_5\_init()}{sph\_haval160\_5\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval160\+\_\+5\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/160/5.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval160\+\_\+5\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a596fe2cec90956f667679079fc04b9c3}\label{sph__haval_8h_a596fe2cec90956f667679079fc04b9c3}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_3@{sph\_haval192\_3}}
+\index{sph\_haval192\_3@{sph\_haval192\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_3()}{sph\_haval192\_3()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+3 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/192/3. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/3 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a0c556aef11bb380ec28656a94b5f4605}\label{sph__haval_8h_a0c556aef11bb380ec28656a94b5f4605}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_3\_addbits\_and\_close@{sph\_haval192\_3\_addbits\_and\_close}}
+\index{sph\_haval192\_3\_addbits\_and\_close@{sph\_haval192\_3\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_3\_addbits\_and\_close()}{sph\_haval192\_3\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/192/3 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (24 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/3 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a238cc6ff3ce791456fbe0b5557cc383f}\label{sph__haval_8h_a238cc6ff3ce791456fbe0b5557cc383f}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_3\_close@{sph\_haval192\_3\_close}}
+\index{sph\_haval192\_3\_close@{sph\_haval192\_3\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_3\_close()}{sph\_haval192\_3\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+3\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/192/3 computation. The output buffer must be wide enough to accomodate the result (24 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/3 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a4bb8e4b4a023767c3b94acec84007d73}\label{sph__haval_8h_a4bb8e4b4a023767c3b94acec84007d73}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_3\_init@{sph\_haval192\_3\_init}}
+\index{sph\_haval192\_3\_init@{sph\_haval192\_3\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_3\_init()}{sph\_haval192\_3\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+3\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/192/3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval192\+\_\+3\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a4f40969f0baaec457a9a01c1cb11af8c}\label{sph__haval_8h_a4f40969f0baaec457a9a01c1cb11af8c}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_4@{sph\_haval192\_4}}
+\index{sph\_haval192\_4@{sph\_haval192\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_4()}{sph\_haval192\_4()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+4 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/192/4. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/4 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a5b2b42f14cb67f29c77ee29794fe02a6}\label{sph__haval_8h_a5b2b42f14cb67f29c77ee29794fe02a6}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_4\_addbits\_and\_close@{sph\_haval192\_4\_addbits\_and\_close}}
+\index{sph\_haval192\_4\_addbits\_and\_close@{sph\_haval192\_4\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_4\_addbits\_and\_close()}{sph\_haval192\_4\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+4\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/192/4 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (24 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/4 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_aad68d957b663970e4b3897aa05eac28c}\label{sph__haval_8h_aad68d957b663970e4b3897aa05eac28c}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_4\_close@{sph\_haval192\_4\_close}}
+\index{sph\_haval192\_4\_close@{sph\_haval192\_4\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_4\_close()}{sph\_haval192\_4\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+4\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/192/4 computation. The output buffer must be wide enough to accomodate the result (24 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/4 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a5b36e600635b9cd4c1e04d7fa7d9605d}\label{sph__haval_8h_a5b36e600635b9cd4c1e04d7fa7d9605d}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_4\_init@{sph\_haval192\_4\_init}}
+\index{sph\_haval192\_4\_init@{sph\_haval192\_4\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_4\_init()}{sph\_haval192\_4\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+4\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/192/4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval192\+\_\+4\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_aa01935e7084dbb281ac6ee30f1321ca4}\label{sph__haval_8h_aa01935e7084dbb281ac6ee30f1321ca4}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_5@{sph\_haval192\_5}}
+\index{sph\_haval192\_5@{sph\_haval192\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_5()}{sph\_haval192\_5()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+5 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/192/5. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/5 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_aaa004124bd3188f03633b8b701b08a3b}\label{sph__haval_8h_aaa004124bd3188f03633b8b701b08a3b}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_5\_addbits\_and\_close@{sph\_haval192\_5\_addbits\_and\_close}}
+\index{sph\_haval192\_5\_addbits\_and\_close@{sph\_haval192\_5\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_5\_addbits\_and\_close()}{sph\_haval192\_5\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/192/5 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (24 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/5 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ad4a98c330ac620702ff0862e2381a6ff}\label{sph__haval_8h_ad4a98c330ac620702ff0862e2381a6ff}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_5\_close@{sph\_haval192\_5\_close}}
+\index{sph\_haval192\_5\_close@{sph\_haval192\_5\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_5\_close()}{sph\_haval192\_5\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+5\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/192/5 computation. The output buffer must be wide enough to accomodate the result (24 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/192/5 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a6a76545063eca775308ff9b57b59ed24}\label{sph__haval_8h_a6a76545063eca775308ff9b57b59ed24}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval192\_5\_init@{sph\_haval192\_5\_init}}
+\index{sph\_haval192\_5\_init@{sph\_haval192\_5\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval192\_5\_init()}{sph\_haval192\_5\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval192\+\_\+5\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/192/5.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval192\+\_\+5\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a51e48bd1d3ecbf79248712e3dd959494}\label{sph__haval_8h_a51e48bd1d3ecbf79248712e3dd959494}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_3@{sph\_haval224\_3}}
+\index{sph\_haval224\_3@{sph\_haval224\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_3()}{sph\_haval224\_3()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+3 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/224/3. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/3 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_aab0baf31e736678bb3482ea927ab654e}\label{sph__haval_8h_aab0baf31e736678bb3482ea927ab654e}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_3\_addbits\_and\_close@{sph\_haval224\_3\_addbits\_and\_close}}
+\index{sph\_haval224\_3\_addbits\_and\_close@{sph\_haval224\_3\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_3\_addbits\_and\_close()}{sph\_haval224\_3\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/224/3 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (28 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/3 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ab86f7b2e9b8b0443b4997015ce600af3}\label{sph__haval_8h_ab86f7b2e9b8b0443b4997015ce600af3}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_3\_close@{sph\_haval224\_3\_close}}
+\index{sph\_haval224\_3\_close@{sph\_haval224\_3\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_3\_close()}{sph\_haval224\_3\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+3\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/224/3 computation. The output buffer must be wide enough to accomodate the result (28 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/3 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ae7538ce2f51535aaa724f6c365f328c8}\label{sph__haval_8h_ae7538ce2f51535aaa724f6c365f328c8}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_3\_init@{sph\_haval224\_3\_init}}
+\index{sph\_haval224\_3\_init@{sph\_haval224\_3\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_3\_init()}{sph\_haval224\_3\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+3\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/224/3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval224\+\_\+3\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a9b1250c04a76ab0909c87f1addcf6bcb}\label{sph__haval_8h_a9b1250c04a76ab0909c87f1addcf6bcb}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_4@{sph\_haval224\_4}}
+\index{sph\_haval224\_4@{sph\_haval224\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_4()}{sph\_haval224\_4()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+4 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/224/4. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/4 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a721823fe2126a6bfd7d10a6ec7f74ac3}\label{sph__haval_8h_a721823fe2126a6bfd7d10a6ec7f74ac3}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_4\_addbits\_and\_close@{sph\_haval224\_4\_addbits\_and\_close}}
+\index{sph\_haval224\_4\_addbits\_and\_close@{sph\_haval224\_4\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_4\_addbits\_and\_close()}{sph\_haval224\_4\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+4\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/224/4 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (28 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/4 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a1300486b4bbbdea2f5689d3ce93ef6ef}\label{sph__haval_8h_a1300486b4bbbdea2f5689d3ce93ef6ef}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_4\_close@{sph\_haval224\_4\_close}}
+\index{sph\_haval224\_4\_close@{sph\_haval224\_4\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_4\_close()}{sph\_haval224\_4\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+4\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/224/4 computation. The output buffer must be wide enough to accomodate the result (28 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/4 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a67edea48177c1abf83f14a1fae0b202d}\label{sph__haval_8h_a67edea48177c1abf83f14a1fae0b202d}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_4\_init@{sph\_haval224\_4\_init}}
+\index{sph\_haval224\_4\_init@{sph\_haval224\_4\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_4\_init()}{sph\_haval224\_4\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+4\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/224/4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval224\+\_\+4\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a5045220877738a223aec74680a1f55b8}\label{sph__haval_8h_a5045220877738a223aec74680a1f55b8}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_5@{sph\_haval224\_5}}
+\index{sph\_haval224\_5@{sph\_haval224\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_5()}{sph\_haval224\_5()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+5 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/224/5. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/5 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ae18b7ec999d97d77917de7f031ed0145}\label{sph__haval_8h_ae18b7ec999d97d77917de7f031ed0145}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_5\_addbits\_and\_close@{sph\_haval224\_5\_addbits\_and\_close}}
+\index{sph\_haval224\_5\_addbits\_and\_close@{sph\_haval224\_5\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_5\_addbits\_and\_close()}{sph\_haval224\_5\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/224/5 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (28 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/5 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ad1c9618edcf3d2f471443db62c0a2284}\label{sph__haval_8h_ad1c9618edcf3d2f471443db62c0a2284}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_5\_close@{sph\_haval224\_5\_close}}
+\index{sph\_haval224\_5\_close@{sph\_haval224\_5\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_5\_close()}{sph\_haval224\_5\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+5\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/224/5 computation. The output buffer must be wide enough to accomodate the result (28 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/224/5 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a9f6a543fc7844d6f2ba35de14c37ac14}\label{sph__haval_8h_a9f6a543fc7844d6f2ba35de14c37ac14}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval224\_5\_init@{sph\_haval224\_5\_init}}
+\index{sph\_haval224\_5\_init@{sph\_haval224\_5\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval224\_5\_init()}{sph\_haval224\_5\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval224\+\_\+5\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/224/5.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval224\+\_\+5\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_aca47290652e0ea0faf9a637093890711}\label{sph__haval_8h_aca47290652e0ea0faf9a637093890711}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_3@{sph\_haval256\_3}}
+\index{sph\_haval256\_3@{sph\_haval256\_3}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_3()}{sph\_haval256\_3()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+3 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/256/3. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/3 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a4899d202efd669d59c2c4ec3515ec168}\label{sph__haval_8h_a4899d202efd669d59c2c4ec3515ec168}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_3\_addbits\_and\_close@{sph\_haval256\_3\_addbits\_and\_close}}
+\index{sph\_haval256\_3\_addbits\_and\_close@{sph\_haval256\_3\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_3\_addbits\_and\_close()}{sph\_haval256\_3\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+3\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/256/3 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (32 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/3 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a5e48594d5f8eeadfe6641b07915fa59b}\label{sph__haval_8h_a5e48594d5f8eeadfe6641b07915fa59b}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_3\_close@{sph\_haval256\_3\_close}}
+\index{sph\_haval256\_3\_close@{sph\_haval256\_3\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_3\_close()}{sph\_haval256\_3\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+3\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/256/3 computation. The output buffer must be wide enough to accomodate the result (32 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/3 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ab7d4c3b3d5e984407215ccac7228b3de}\label{sph__haval_8h_ab7d4c3b3d5e984407215ccac7228b3de}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_3\_init@{sph\_haval256\_3\_init}}
+\index{sph\_haval256\_3\_init@{sph\_haval256\_3\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_3\_init()}{sph\_haval256\_3\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+3\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/256/3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval256\+\_\+3\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a2eaf99e5bb524ad7d8f5a8a90611d21c}\label{sph__haval_8h_a2eaf99e5bb524ad7d8f5a8a90611d21c}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_4@{sph\_haval256\_4}}
+\index{sph\_haval256\_4@{sph\_haval256\_4}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_4()}{sph\_haval256\_4()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+4 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/256/4. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/4 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a117bc452f1891077cc6c388279700191}\label{sph__haval_8h_a117bc452f1891077cc6c388279700191}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_4\_addbits\_and\_close@{sph\_haval256\_4\_addbits\_and\_close}}
+\index{sph\_haval256\_4\_addbits\_and\_close@{sph\_haval256\_4\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_4\_addbits\_and\_close()}{sph\_haval256\_4\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+4\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/256/4 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (32 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/4 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_acbb67fc27b14789346cb7e0fd82c5862}\label{sph__haval_8h_acbb67fc27b14789346cb7e0fd82c5862}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_4\_close@{sph\_haval256\_4\_close}}
+\index{sph\_haval256\_4\_close@{sph\_haval256\_4\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_4\_close()}{sph\_haval256\_4\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+4\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/256/4 computation. The output buffer must be wide enough to accomodate the result (32 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/4 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_ad70d8ed3de4dc22d9c49e62baef4cda1}\label{sph__haval_8h_ad70d8ed3de4dc22d9c49e62baef4cda1}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_4\_init@{sph\_haval256\_4\_init}}
+\index{sph\_haval256\_4\_init@{sph\_haval256\_4\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_4\_init()}{sph\_haval256\_4\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+4\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/256/4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval256\+\_\+4\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a79980c7ef264dd52d4d39da0f141d81f}\label{sph__haval_8h_a79980c7ef264dd52d4d39da0f141d81f}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_5@{sph\_haval256\_5}}
+\index{sph\_haval256\_5@{sph\_haval256\_5}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_5()}{sph\_haval256\_5()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+5 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes for H\+A\+V\+A\+L-\/256/5. If {\ttfamily len} is 0, then this function does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/5 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_af0740ef632b8f99796fb5c6aca84da54}\label{sph__haval_8h_af0740ef632b8f99796fb5c6aca84da54}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_5\_addbits\_and\_close@{sph\_haval256\_5\_addbits\_and\_close}}
+\index{sph\_haval256\_5\_addbits\_and\_close@{sph\_haval256\_5\_addbits\_and\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_5\_addbits\_and\_close()}{sph\_haval256\_5\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+5\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/256/5 computation. Up to 7 extra input bits may be added to the input message; these are the {\ttfamily n} upper bits of the {\ttfamily ub} byte (i.\+e. the first extra bit has value 128 in {\ttfamily ub}, the second extra bit has value 64, and so on). Other bits in {\ttfamily ub} are ignored.
+
+The output buffer must be wide enough to accomodate the result (32 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/5 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a5e0ee6fd552a6795ffc4804ece5342e9}\label{sph__haval_8h_a5e0ee6fd552a6795ffc4804ece5342e9}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_5\_close@{sph\_haval256\_5\_close}}
+\index{sph\_haval256\_5\_close@{sph\_haval256\_5\_close}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_5\_close()}{sph\_haval256\_5\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+5\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Close a H\+A\+V\+A\+L-\/256/5 computation. The output buffer must be wide enough to accomodate the result (32 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the H\+A\+V\+A\+L-\/256/5 context \\
+\hline
+{\em dst} & the output buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_aafe8ac09e0a7ec4a950cfa4fd9f959e2}\label{sph__haval_8h_aafe8ac09e0a7ec4a950cfa4fd9f959e2}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval256\_5\_init@{sph\_haval256\_5\_init}}
+\index{sph\_haval256\_5\_init@{sph\_haval256\_5\_init}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval256\_5\_init()}{sph\_haval256\_5\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+haval256\+\_\+5\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize the context for H\+A\+V\+A\+L-\/256/5.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & context to initialize (pointer to a {\ttfamily sph\+\_\+haval256\+\_\+5\+\_\+context} structure) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a8f7567b2f58a47e6e29059e1da2b3440}\label{sph__haval_8h_a8f7567b2f58a47e6e29059e1da2b3440}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval\_3\_comp@{sph\_haval\_3\_comp}}
+\index{sph\_haval\_3\_comp@{sph\_haval\_3\_comp}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval\_3\_comp()}{sph\_haval\_3\_comp()}}
+{\footnotesize\ttfamily void sph\+\_\+haval\+\_\+3\+\_\+comp (\begin{DoxyParamCaption}\item[{const sph\+\_\+u32}]{msg\mbox{[}32\mbox{]},  }\item[{sph\+\_\+u32}]{val\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+Apply the H\+A\+V\+AL compression function on the provided data. The {\ttfamily msg} parameter contains the 32 32-\/bit input blocks, as numerical values (hence after the little-\/endian decoding). The {\ttfamily val} parameter contains the 8 32-\/bit input blocks for the compression function; the output is written in place in this array. This function uses three internal passes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message block (32 values) \\
+\hline
+{\em val} & the function 256-\/bit input and output \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_af2ba3f89acff35dc150d5696f4d853ea}\label{sph__haval_8h_af2ba3f89acff35dc150d5696f4d853ea}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval\_4\_comp@{sph\_haval\_4\_comp}}
+\index{sph\_haval\_4\_comp@{sph\_haval\_4\_comp}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval\_4\_comp()}{sph\_haval\_4\_comp()}}
+{\footnotesize\ttfamily void sph\+\_\+haval\+\_\+4\+\_\+comp (\begin{DoxyParamCaption}\item[{const sph\+\_\+u32}]{msg\mbox{[}32\mbox{]},  }\item[{sph\+\_\+u32}]{val\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+Apply the H\+A\+V\+AL compression function on the provided data. The {\ttfamily msg} parameter contains the 32 32-\/bit input blocks, as numerical values (hence after the little-\/endian decoding). The {\ttfamily val} parameter contains the 8 32-\/bit input blocks for the compression function; the output is written in place in this array. This function uses four internal passes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message block (32 values) \\
+\hline
+{\em val} & the function 256-\/bit input and output \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__haval_8h_a1d2858551d51b2ec13c125cd48297a5c}\label{sph__haval_8h_a1d2858551d51b2ec13c125cd48297a5c}} 
+\index{sph\_haval.h@{sph\_haval.h}!sph\_haval\_5\_comp@{sph\_haval\_5\_comp}}
+\index{sph\_haval\_5\_comp@{sph\_haval\_5\_comp}!sph\_haval.h@{sph\_haval.h}}
+\subsubsection{\texorpdfstring{sph\_haval\_5\_comp()}{sph\_haval\_5\_comp()}}
+{\footnotesize\ttfamily void sph\+\_\+haval\+\_\+5\+\_\+comp (\begin{DoxyParamCaption}\item[{const sph\+\_\+u32}]{msg\mbox{[}32\mbox{]},  }\item[{sph\+\_\+u32}]{val\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+Apply the H\+A\+V\+AL compression function on the provided data. The {\ttfamily msg} parameter contains the 32 32-\/bit input blocks, as numerical values (hence after the little-\/endian decoding). The {\ttfamily val} parameter contains the 8 32-\/bit input blocks for the compression function; the output is written in place in this array. This function uses five internal passes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message block (32 values) \\
+\hline
+{\em val} & the function 256-\/bit input and output \\
+\hline
+\end{DoxyParams}

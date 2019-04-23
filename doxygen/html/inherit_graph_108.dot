@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node627 [label="CChainParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_chain_params.html",tooltip=" "];
+  Node627 -> Node628 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node628 [label="CMainParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_main_params.html",tooltip=" "];
+  Node628 -> Node629 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node629 [label="CTestNetParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_test_net_params.html",tooltip=" "];
+  Node629 -> Node630 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node630 [label="CRegTestParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_reg_test_params.html",tooltip=" "];
+  Node628 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="CUnitTestParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_unit_test_params.html",tooltip=" "];
+  Node0 [label="CModifiableParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_modifiable_params.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

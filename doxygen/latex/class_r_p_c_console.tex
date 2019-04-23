@@ -1,0 +1,258 @@
+\hypertarget{class_r_p_c_console}{}\section{R\+P\+C\+Console Class Reference}
+\label{class_r_p_c_console}\index{RPCConsole@{RPCConsole}}
+
+
+{\ttfamily \#include $<$rpcconsole.\+h$>$}
+
+
+
+Inherits Q\+Dialog.
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_a8924901fe2574698b55f173ef576c83e}\label{class_r_p_c_console_a8924901fe2574698b55f173ef576c83e}} 
+enum {\bfseries Message\+Class} \{ \newline
+{\bfseries M\+C\+\_\+\+E\+R\+R\+OR}, 
+{\bfseries M\+C\+\_\+\+D\+E\+B\+UG}, 
+{\bfseries C\+M\+D\+\_\+\+R\+E\+Q\+U\+E\+ST}, 
+{\bfseries C\+M\+D\+\_\+\+R\+E\+P\+LY}, 
+\newline
+{\bfseries C\+M\+D\+\_\+\+E\+R\+R\+OR}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_aad0fc48b238137c8f6d322b2a484c81a}\label{class_r_p_c_console_aad0fc48b238137c8f6d322b2a484c81a}} 
+void {\bfseries clear} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_ad272e3e402b452d470e5d0cc22dfa838}{wallet\+Salvage}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a87bca6ab058743cda3d716543071ce03}{wallet\+Rescan}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_ab99e8a7e0a6164126aa18c59827722d5}{wallet\+Zaptxes1}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_ab96912afa85d43a67a4db4869faccdd9}{wallet\+Zaptxes2}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a5ba9075f3f7dad2e84302ea3da9f51af}{wallet\+Upgrade}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_ac0e0d64fc96a4621dcb8006eafbb3bc5}{wallet\+Reindex}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a32940def4bbbe99bebd243bace2101da}{wallet\+Resync}} ()
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_a9efe36637f7b615f63f2886ba555d49a}\label{class_r_p_c_console_a9efe36637f7b615f63f2886ba555d49a}} 
+void {\bfseries reject} ()
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_ad7a93a587a78b0080a930bd325460b20}\label{class_r_p_c_console_ad7a93a587a78b0080a930bd325460b20}} 
+void {\bfseries message} (int category, const Q\+String \&message, bool html=false)
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_aa4546cb7812dd35704de8bf09a6ceb60}{set\+Num\+Connections}} (int count)
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a98b7e85774a91d77c3b01276bd41bc51}{set\+Num\+Blocks}} (int count)
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a23a841c2142f7ac49506099334135cf5}{set\+Masternode\+Count}} (const Q\+String \&str\+Masternodes)
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a1c2ccbaedfeb8ed8cd3f73307a38bd7f}{browse\+History}} (int offset)
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_aaea18a980de27ecf7d358158d44887d2}{scroll\+To\+End}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_ae1a4c0c082f7eb5987164bca92b229f6}{show\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_ae2ab094db61f2822f4fb49618a908798}{show\+Console}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_afe2663c553d81da68b7df5022f65be4a}{show\+Network}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a95e38366e41ff43dea094b1c5ff4d340}{show\+Peers}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a778d71231f31de641e70702b341ded04}{show\+Repair}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_ab7e647de183fc0d139bac81ed0492667}{show\+Conf\+Editor}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a8adc9441d40b37a037ecdfe8183323f7}{show\+M\+N\+Conf\+Editor}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a2487fa6a90cddcbb17ae4bb13ecc5359}{peer\+Selected}} (const Q\+Item\+Selection \&selected, const Q\+Item\+Selection \&deselected)
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_af952ebc6484c8f7d1262fa0bceed41bf}{peer\+Layout\+Changed}} ()
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a013ee20b746b6453375738e7b5e1cb4e}{show\+Backups}} ()
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_aa2ff103a6180259899b7661ef963345b}\label{class_r_p_c_console_aa2ff103a6180259899b7661ef963345b}} 
+void {\bfseries stop\+Executor} ()
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_a5a4217ca8ba417c8e4bb7b5ff18ec864}\label{class_r_p_c_console_a5a4217ca8ba417c8e4bb7b5ff18ec864}} 
+void {\bfseries cmd\+Request} (const Q\+String \&command)
+\item 
+void \mbox{\hyperlink{class_r_p_c_console_a1aab203ab026fb80bd8aeb41f510b682}{handle\+Restart}} (Q\+String\+List args)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_aeac546e68f8c2cafa79a0294dd78f2ad}\label{class_r_p_c_console_aeac546e68f8c2cafa79a0294dd78f2ad}} 
+{\bfseries R\+P\+C\+Console} (Q\+Widget $\ast$parent)
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_a355349a33664a07628e9ca22a60f5fa7}\label{class_r_p_c_console_a355349a33664a07628e9ca22a60f5fa7}} 
+void {\bfseries set\+Client\+Model} (\mbox{\hyperlink{class_client_model}{Client\+Model}} $\ast$model)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_r_p_c_console_a81ce4c9d95e3de6de4c46ec272ae91ba}\label{class_r_p_c_console_a81ce4c9d95e3de6de4c46ec272ae91ba}} 
+virtual bool {\bfseries event\+Filter} (Q\+Object $\ast$obj, Q\+Event $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Local Bitcoin R\+PC console. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_p_c_console_a1c2ccbaedfeb8ed8cd3f73307a38bd7f}\label{class_r_p_c_console_a1c2ccbaedfeb8ed8cd3f73307a38bd7f}} 
+\index{RPCConsole@{RPCConsole}!browseHistory@{browseHistory}}
+\index{browseHistory@{browseHistory}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{browseHistory}{browseHistory}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::browse\+History (\begin{DoxyParamCaption}\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Go forward or back in history \mbox{\Hypertarget{class_r_p_c_console_a1aab203ab026fb80bd8aeb41f510b682}\label{class_r_p_c_console_a1aab203ab026fb80bd8aeb41f510b682}} 
+\index{RPCConsole@{RPCConsole}!handleRestart@{handleRestart}}
+\index{handleRestart@{handleRestart}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{handleRestart}{handleRestart}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::handle\+Restart (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Get restart command-\/line parameters and handle restart \mbox{\Hypertarget{class_r_p_c_console_af952ebc6484c8f7d1262fa0bceed41bf}\label{class_r_p_c_console_af952ebc6484c8f7d1262fa0bceed41bf}} 
+\index{RPCConsole@{RPCConsole}!peerLayoutChanged@{peerLayoutChanged}}
+\index{peerLayoutChanged@{peerLayoutChanged}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{peerLayoutChanged}{peerLayoutChanged}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::peer\+Layout\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Handle updated peer information \mbox{\Hypertarget{class_r_p_c_console_a2487fa6a90cddcbb17ae4bb13ecc5359}\label{class_r_p_c_console_a2487fa6a90cddcbb17ae4bb13ecc5359}} 
+\index{RPCConsole@{RPCConsole}!peerSelected@{peerSelected}}
+\index{peerSelected@{peerSelected}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{peerSelected}{peerSelected}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::peer\+Selected (\begin{DoxyParamCaption}\item[{const Q\+Item\+Selection \&}]{selected,  }\item[{const Q\+Item\+Selection \&}]{deselected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Handle selection of peer in peers list \mbox{\Hypertarget{class_r_p_c_console_aaea18a980de27ecf7d358158d44887d2}\label{class_r_p_c_console_aaea18a980de27ecf7d358158d44887d2}} 
+\index{RPCConsole@{RPCConsole}!scrollToEnd@{scrollToEnd}}
+\index{scrollToEnd@{scrollToEnd}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{scrollToEnd}{scrollToEnd}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::scroll\+To\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Scroll console view to end \mbox{\Hypertarget{class_r_p_c_console_a23a841c2142f7ac49506099334135cf5}\label{class_r_p_c_console_a23a841c2142f7ac49506099334135cf5}} 
+\index{RPCConsole@{RPCConsole}!setMasternodeCount@{setMasternodeCount}}
+\index{setMasternodeCount@{setMasternodeCount}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{setMasternodeCount}{setMasternodeCount}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::set\+Masternode\+Count (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{str\+Masternodes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Set number of masternodes shown in the UI \mbox{\Hypertarget{class_r_p_c_console_a98b7e85774a91d77c3b01276bd41bc51}\label{class_r_p_c_console_a98b7e85774a91d77c3b01276bd41bc51}} 
+\index{RPCConsole@{RPCConsole}!setNumBlocks@{setNumBlocks}}
+\index{setNumBlocks@{setNumBlocks}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{setNumBlocks}{setNumBlocks}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::set\+Num\+Blocks (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Set number of blocks shown in the UI \mbox{\Hypertarget{class_r_p_c_console_aa4546cb7812dd35704de8bf09a6ceb60}\label{class_r_p_c_console_aa4546cb7812dd35704de8bf09a6ceb60}} 
+\index{RPCConsole@{RPCConsole}!setNumConnections@{setNumConnections}}
+\index{setNumConnections@{setNumConnections}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{setNumConnections}{setNumConnections}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::set\+Num\+Connections (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Set number of connections shown in the UI \mbox{\Hypertarget{class_r_p_c_console_a013ee20b746b6453375738e7b5e1cb4e}\label{class_r_p_c_console_a013ee20b746b6453375738e7b5e1cb4e}} 
+\index{RPCConsole@{RPCConsole}!showBackups@{showBackups}}
+\index{showBackups@{showBackups}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{showBackups}{showBackups}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::show\+Backups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Show folder with wallet backups in default browser \mbox{\Hypertarget{class_r_p_c_console_ab7e647de183fc0d139bac81ed0492667}\label{class_r_p_c_console_ab7e647de183fc0d139bac81ed0492667}} 
+\index{RPCConsole@{RPCConsole}!showConfEditor@{showConfEditor}}
+\index{showConfEditor@{showConfEditor}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{showConfEditor}{showConfEditor}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::show\+Conf\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Open external (default) editor with zenzo.\+conf \mbox{\Hypertarget{class_r_p_c_console_ae2ab094db61f2822f4fb49618a908798}\label{class_r_p_c_console_ae2ab094db61f2822f4fb49618a908798}} 
+\index{RPCConsole@{RPCConsole}!showConsole@{showConsole}}
+\index{showConsole@{showConsole}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{showConsole}{showConsole}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::show\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to console tab and show \mbox{\Hypertarget{class_r_p_c_console_ae1a4c0c082f7eb5987164bca92b229f6}\label{class_r_p_c_console_ae1a4c0c082f7eb5987164bca92b229f6}} 
+\index{RPCConsole@{RPCConsole}!showInfo@{showInfo}}
+\index{showInfo@{showInfo}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{showInfo}{showInfo}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::show\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to info tab and show \mbox{\Hypertarget{class_r_p_c_console_a8adc9441d40b37a037ecdfe8183323f7}\label{class_r_p_c_console_a8adc9441d40b37a037ecdfe8183323f7}} 
+\index{RPCConsole@{RPCConsole}!showMNConfEditor@{showMNConfEditor}}
+\index{showMNConfEditor@{showMNConfEditor}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{showMNConfEditor}{showMNConfEditor}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::show\+M\+N\+Conf\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Open external (default) editor with masternode.\+conf \mbox{\Hypertarget{class_r_p_c_console_afe2663c553d81da68b7df5022f65be4a}\label{class_r_p_c_console_afe2663c553d81da68b7df5022f65be4a}} 
+\index{RPCConsole@{RPCConsole}!showNetwork@{showNetwork}}
+\index{showNetwork@{showNetwork}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{showNetwork}{showNetwork}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::show\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to network tab and show \mbox{\Hypertarget{class_r_p_c_console_a95e38366e41ff43dea094b1c5ff4d340}\label{class_r_p_c_console_a95e38366e41ff43dea094b1c5ff4d340}} 
+\index{RPCConsole@{RPCConsole}!showPeers@{showPeers}}
+\index{showPeers@{showPeers}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{showPeers}{showPeers}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::show\+Peers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to peers tab and show \mbox{\Hypertarget{class_r_p_c_console_a778d71231f31de641e70702b341ded04}\label{class_r_p_c_console_a778d71231f31de641e70702b341ded04}} 
+\index{RPCConsole@{RPCConsole}!showRepair@{showRepair}}
+\index{showRepair@{showRepair}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{showRepair}{showRepair}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::show\+Repair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Switch to wallet-\/repair tab and show \mbox{\Hypertarget{class_r_p_c_console_ac0e0d64fc96a4621dcb8006eafbb3bc5}\label{class_r_p_c_console_ac0e0d64fc96a4621dcb8006eafbb3bc5}} 
+\index{RPCConsole@{RPCConsole}!walletReindex@{walletReindex}}
+\index{walletReindex@{walletReindex}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{walletReindex}{walletReindex}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::wallet\+Reindex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Restart wallet with \char`\"{}-\/reindex\char`\"{} \mbox{\Hypertarget{class_r_p_c_console_a87bca6ab058743cda3d716543071ce03}\label{class_r_p_c_console_a87bca6ab058743cda3d716543071ce03}} 
+\index{RPCConsole@{RPCConsole}!walletRescan@{walletRescan}}
+\index{walletRescan@{walletRescan}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{walletRescan}{walletRescan}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::wallet\+Rescan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Restart wallet with \char`\"{}-\/rescan\char`\"{} \mbox{\Hypertarget{class_r_p_c_console_a32940def4bbbe99bebd243bace2101da}\label{class_r_p_c_console_a32940def4bbbe99bebd243bace2101da}} 
+\index{RPCConsole@{RPCConsole}!walletResync@{walletResync}}
+\index{walletResync@{walletResync}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{walletResync}{walletResync}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::wallet\+Resync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Restart wallet with \char`\"{}-\/resync\char`\"{} \mbox{\Hypertarget{class_r_p_c_console_ad272e3e402b452d470e5d0cc22dfa838}\label{class_r_p_c_console_ad272e3e402b452d470e5d0cc22dfa838}} 
+\index{RPCConsole@{RPCConsole}!walletSalvage@{walletSalvage}}
+\index{walletSalvage@{walletSalvage}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{walletSalvage}{walletSalvage}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::wallet\+Salvage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Wallet repair options
+
+Restart wallet with \char`\"{}-\/salvagewallet\char`\"{} \mbox{\Hypertarget{class_r_p_c_console_a5ba9075f3f7dad2e84302ea3da9f51af}\label{class_r_p_c_console_a5ba9075f3f7dad2e84302ea3da9f51af}} 
+\index{RPCConsole@{RPCConsole}!walletUpgrade@{walletUpgrade}}
+\index{walletUpgrade@{walletUpgrade}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{walletUpgrade}{walletUpgrade}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::wallet\+Upgrade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Restart wallet with \char`\"{}-\/upgradewallet\char`\"{} \mbox{\Hypertarget{class_r_p_c_console_ab99e8a7e0a6164126aa18c59827722d5}\label{class_r_p_c_console_ab99e8a7e0a6164126aa18c59827722d5}} 
+\index{RPCConsole@{RPCConsole}!walletZaptxes1@{walletZaptxes1}}
+\index{walletZaptxes1@{walletZaptxes1}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{walletZaptxes1}{walletZaptxes1}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::wallet\+Zaptxes1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Restart wallet with \char`\"{}-\/zapwallettxes=1\char`\"{} \mbox{\Hypertarget{class_r_p_c_console_ab96912afa85d43a67a4db4869faccdd9}\label{class_r_p_c_console_ab96912afa85d43a67a4db4869faccdd9}} 
+\index{RPCConsole@{RPCConsole}!walletZaptxes2@{walletZaptxes2}}
+\index{walletZaptxes2@{walletZaptxes2}!RPCConsole@{RPCConsole}}
+\subsubsection{\texorpdfstring{walletZaptxes2}{walletZaptxes2}}
+{\footnotesize\ttfamily void R\+P\+C\+Console\+::wallet\+Zaptxes2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Restart wallet with \char`\"{}-\/zapwallettxes=2\char`\"{} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/qt/rpcconsole.\+h\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/qt/moc\+\_\+rpcconsole.\+cpp\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/qt/rpcconsole.\+cpp\end{DoxyCompactItemize}

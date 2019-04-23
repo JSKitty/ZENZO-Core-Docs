@@ -1,0 +1,13 @@
+digraph "D:/Documentz/GitHub/ZENZO-Core" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a8c9dd05c9344a156fecede6afc995fd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GitHub" fontname="Helvetica", fontsize="10", URL="dir_a8c9dd05c9344a156fecede6afc995fd.html"]
+  subgraph clusterdir_9bb5e4c759ed59ac35a45f3375e510df {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_9bb5e4c759ed59ac35a45f3375e510df.html"];
+    dir_9bb5e4c759ed59ac35a45f3375e510df [shape=plaintext label="ZENZO-Core"];
+    dir_6be210b7615ccb4059ce9ba907fecdcd [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_6be210b7615ccb4059ce9ba907fecdcd.html"];
+  }
+  }
+}

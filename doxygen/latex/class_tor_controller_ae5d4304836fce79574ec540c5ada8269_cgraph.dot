@@ -1,0 +1,12 @@
+digraph "TorController::Reconnect"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="TorController::Reconnect",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="TorControlConnection\l::Connect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tor_control_connection.html#a36b6359caf9a304efe310b9b7141a939",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="TorControlConnection\l::Disconnect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tor_control_connection.html#addb42114063641eab12be2fc39b859d5",tooltip=" "];
+}

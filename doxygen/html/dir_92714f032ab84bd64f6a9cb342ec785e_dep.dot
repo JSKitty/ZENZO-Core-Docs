@@ -1,0 +1,13 @@
+digraph "D:/Documentz" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_275089585c7fc1b5fd5d7d42c69cb1da {
+    graph [ bgcolor="#ddddee", pencolor="black", label="D:" fontname="Helvetica", fontsize="10", URL="dir_275089585c7fc1b5fd5d7d42c69cb1da.html"]
+  subgraph clusterdir_92714f032ab84bd64f6a9cb342ec785e {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_92714f032ab84bd64f6a9cb342ec785e.html"];
+    dir_92714f032ab84bd64f6a9cb342ec785e [shape=plaintext label="Documentz"];
+    dir_a8c9dd05c9344a156fecede6afc995fd [shape=box label="GitHub" color="red" fillcolor="white" style="filled" URL="dir_a8c9dd05c9344a156fecede6afc995fd.html"];
+  }
+  }
+}

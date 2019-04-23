@@ -1,0 +1,93 @@
+\hypertarget{struct_c_main_signals}{}\section{C\+Main\+Signals Struct Reference}
+\label{struct_c_main_signals}\index{CMainSignals@{CMainSignals}}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::signals2\+::signal$<$ void(const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$)$>$ \mbox{\hyperlink{struct_c_main_signals_a0380ea185992a8ee3572b5cf2aaa7677}{Updated\+Block\+Tip}}
+\item 
+boost\+::signals2\+::signal$<$ void(const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&, const \mbox{\hyperlink{class_c_block}{C\+Block}} $\ast$)$>$ \mbox{\hyperlink{struct_c_main_signals_a7ced7f332ed90d57110a78ad50d5a60f}{Sync\+Transaction}}
+\item 
+boost\+::signals2\+::signal$<$ void(const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&)$>$ \mbox{\hyperlink{struct_c_main_signals_a8323c4bfc6811c30abd2e3ff8aacbbaf}{Notify\+Transaction\+Lock}}
+\item 
+boost\+::signals2\+::signal$<$ bool(const \mbox{\hyperlink{classuint256}{uint256}} \&)$>$ \mbox{\hyperlink{struct_c_main_signals_a5c4626fe1ae15530b27a29cde74ed9c2}{Updated\+Transaction}}
+\item 
+boost\+::signals2\+::signal$<$ void(const \mbox{\hyperlink{struct_c_block_locator}{C\+Block\+Locator}} \&)$>$ \mbox{\hyperlink{struct_c_main_signals_a11f2f18522ff7aa672eb5cc8c1f397b2}{Set\+Best\+Chain}}
+\item 
+boost\+::signals2\+::signal$<$ void(const \mbox{\hyperlink{classuint256}{uint256}} \&)$>$ \mbox{\hyperlink{struct_c_main_signals_a2f8f94d91265dc946e97614042698a7b}{Inventory}}
+\item 
+boost\+::signals2\+::signal$<$ void(int64\+\_\+t n\+Best\+Block\+Time)$>$ \mbox{\hyperlink{struct_c_main_signals_a57ba54e641838bc03d0bbda30796c0c9}{Broadcast}}
+\item 
+boost\+::signals2\+::signal$<$ void(const \mbox{\hyperlink{class_c_block}{C\+Block}} \&, const \mbox{\hyperlink{class_c_validation_state}{C\+Validation\+State}} \&)$>$ \mbox{\hyperlink{struct_c_main_signals_a9419bb09211f46bdc7f214e9d94f1bd7}{Block\+Checked}}
+\item 
+boost\+::signals2\+::signal$<$ void(boost\+::shared\+\_\+ptr$<$ C\+Reserve\+Script $>$ \&)$>$ \mbox{\hyperlink{struct_c_main_signals_a459b58e6ee3b3c064439c665cfc8b28d}{Script\+For\+Mining}}
+\item 
+boost\+::signals2\+::signal$<$ void(const \mbox{\hyperlink{classuint256}{uint256}} \&)$>$ \mbox{\hyperlink{struct_c_main_signals_a27cc5668c440a9d451f7f661370dbc61}{Block\+Found}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_main_signals_a9419bb09211f46bdc7f214e9d94f1bd7}\label{struct_c_main_signals_a9419bb09211f46bdc7f214e9d94f1bd7}} 
+\index{CMainSignals@{CMainSignals}!BlockChecked@{BlockChecked}}
+\index{BlockChecked@{BlockChecked}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{BlockChecked}{BlockChecked}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const \mbox{\hyperlink{class_c_block}{C\+Block}}\&, const \mbox{\hyperlink{class_c_validation_state}{C\+Validation\+State}}\&)$>$ C\+Main\+Signals\+::\+Block\+Checked}
+
+Notifies listeners of a block validation result \mbox{\Hypertarget{struct_c_main_signals_a27cc5668c440a9d451f7f661370dbc61}\label{struct_c_main_signals_a27cc5668c440a9d451f7f661370dbc61}} 
+\index{CMainSignals@{CMainSignals}!BlockFound@{BlockFound}}
+\index{BlockFound@{BlockFound}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{BlockFound}{BlockFound}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const \mbox{\hyperlink{classuint256}{uint256}} \&)$>$ C\+Main\+Signals\+::\+Block\+Found}
+
+Notifies listeners that a block has been successfully mined \mbox{\Hypertarget{struct_c_main_signals_a57ba54e641838bc03d0bbda30796c0c9}\label{struct_c_main_signals_a57ba54e641838bc03d0bbda30796c0c9}} 
+\index{CMainSignals@{CMainSignals}!Broadcast@{Broadcast}}
+\index{Broadcast@{Broadcast}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{Broadcast}{Broadcast}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (int64\+\_\+t n\+Best\+Block\+Time)$>$ C\+Main\+Signals\+::\+Broadcast}
+
+Tells listeners to broadcast their data. \mbox{\Hypertarget{struct_c_main_signals_a2f8f94d91265dc946e97614042698a7b}\label{struct_c_main_signals_a2f8f94d91265dc946e97614042698a7b}} 
+\index{CMainSignals@{CMainSignals}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{Inventory}{Inventory}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const \mbox{\hyperlink{classuint256}{uint256}} \&)$>$ C\+Main\+Signals\+::\+Inventory}
+
+Notifies listeners about an inventory item being seen on the network. \mbox{\Hypertarget{struct_c_main_signals_a8323c4bfc6811c30abd2e3ff8aacbbaf}\label{struct_c_main_signals_a8323c4bfc6811c30abd2e3ff8aacbbaf}} 
+\index{CMainSignals@{CMainSignals}!NotifyTransactionLock@{NotifyTransactionLock}}
+\index{NotifyTransactionLock@{NotifyTransactionLock}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{NotifyTransactionLock}{NotifyTransactionLock}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&)$>$ C\+Main\+Signals\+::\+Notify\+Transaction\+Lock}
+
+Notifies listeners of an updated transaction lock without new data. \mbox{\Hypertarget{struct_c_main_signals_a459b58e6ee3b3c064439c665cfc8b28d}\label{struct_c_main_signals_a459b58e6ee3b3c064439c665cfc8b28d}} 
+\index{CMainSignals@{CMainSignals}!ScriptForMining@{ScriptForMining}}
+\index{ScriptForMining@{ScriptForMining}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{ScriptForMining}{ScriptForMining}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (boost\+::shared\+\_\+ptr$<$C\+Reserve\+Script$>$\&)$>$ C\+Main\+Signals\+::\+Script\+For\+Mining}
+
+Notifies listeners that a key for mining is required (coinbase) \mbox{\Hypertarget{struct_c_main_signals_a11f2f18522ff7aa672eb5cc8c1f397b2}\label{struct_c_main_signals_a11f2f18522ff7aa672eb5cc8c1f397b2}} 
+\index{CMainSignals@{CMainSignals}!SetBestChain@{SetBestChain}}
+\index{SetBestChain@{SetBestChain}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{SetBestChain}{SetBestChain}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const \mbox{\hyperlink{struct_c_block_locator}{C\+Block\+Locator}} \&)$>$ C\+Main\+Signals\+::\+Set\+Best\+Chain}
+
+Notifies listeners of a new active block chain. \mbox{\Hypertarget{struct_c_main_signals_a7ced7f332ed90d57110a78ad50d5a60f}\label{struct_c_main_signals_a7ced7f332ed90d57110a78ad50d5a60f}} 
+\index{CMainSignals@{CMainSignals}!SyncTransaction@{SyncTransaction}}
+\index{SyncTransaction@{SyncTransaction}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{SyncTransaction}{SyncTransaction}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&, const \mbox{\hyperlink{class_c_block}{C\+Block}} $\ast$)$>$ C\+Main\+Signals\+::\+Sync\+Transaction}
+
+Notifies listeners of updated transaction data (transaction, and optionally the block it is found in. \mbox{\Hypertarget{struct_c_main_signals_a0380ea185992a8ee3572b5cf2aaa7677}\label{struct_c_main_signals_a0380ea185992a8ee3572b5cf2aaa7677}} 
+\index{CMainSignals@{CMainSignals}!UpdatedBlockTip@{UpdatedBlockTip}}
+\index{UpdatedBlockTip@{UpdatedBlockTip}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{UpdatedBlockTip}{UpdatedBlockTip}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$)$>$ C\+Main\+Signals\+::\+Updated\+Block\+Tip}
+
+Notifies listeners of updated block chain tip \mbox{\Hypertarget{struct_c_main_signals_a5c4626fe1ae15530b27a29cde74ed9c2}\label{struct_c_main_signals_a5c4626fe1ae15530b27a29cde74ed9c2}} 
+\index{CMainSignals@{CMainSignals}!UpdatedTransaction@{UpdatedTransaction}}
+\index{UpdatedTransaction@{UpdatedTransaction}!CMainSignals@{CMainSignals}}
+\subsubsection{\texorpdfstring{UpdatedTransaction}{UpdatedTransaction}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$bool (const \mbox{\hyperlink{classuint256}{uint256}} \&)$>$ C\+Main\+Signals\+::\+Updated\+Transaction}
+
+Notifies listeners of an updated transaction without new data (for now\+: a coinbase potentially becoming visible). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/validationinterface.\+h\end{DoxyCompactItemize}

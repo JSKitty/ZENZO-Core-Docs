@@ -1,0 +1,14 @@
+digraph "CKey::SignCompact"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node27 [label="CKey::SignCompact",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node27 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="CObfuScationSigner\l::SignMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfu_scation_signer.html#a004eab16d18045b42d51037eab817585",tooltip="Sign the message, returns true if successful."];
+  Node28 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="CObfuscationQueue::Sign",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfuscation_queue.html#a7d7be50e6c9ca531f4a4b69a3f7c0b79",tooltip=" "];
+  Node29 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="CObfuscationPool::IsCompatible\lWithSession",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfuscation_pool.html#a820877f910e3f13086f3996acff68677",tooltip="Is this amount compatible with other client in the pool?"];
+}

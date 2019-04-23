@@ -1,0 +1,487 @@
+\hypertarget{sph__shabal_8h}{}\section{D\+:/\+Documentz/\+Git\+Hub/\+Z\+E\+N\+Z\+O-\/\+Core/src/crypto/sph\+\_\+shabal.h File Reference}
+\label{sph__shabal_8h}\index{D:/Documentz/GitHub/ZENZO-\/Core/src/crypto/sph\_shabal.h@{D:/Documentz/GitHub/ZENZO-\/Core/src/crypto/sph\_shabal.h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sph\+\_\+types.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sph__shabal_8h_a48e46178fbf3d16345e313ef5398d302}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal192}}~192
+\item 
+\#define \mbox{\hyperlink{sph__shabal_8h_a1d74b8261bb7c0dbcc4c87a69e51f159}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal224}}~224
+\item 
+\#define \mbox{\hyperlink{sph__shabal_8h_a46e058a6e6591b6e8ae33478309087ed}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal256}}~256
+\item 
+\#define \mbox{\hyperlink{sph__shabal_8h_a8cd5857e1d40d0b2396dc8a7abe72a00}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal384}}~384
+\item 
+\#define \mbox{\hyperlink{sph__shabal_8h_a58ab93d51c3417c76b04c0363abd3cdd}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal512}}~512
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a535b95e62a9bb368a2c9ec7aad54cb8b}{sph\+\_\+shabal192\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a7e6d4d257b03851ddbec329177c72af5}{sph\+\_\+shabal224\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a50cb06404d62ee2a9eee76f19a25bae6}{sph\+\_\+shabal256\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a38472eba0071edd38065cb026f810ab0}{sph\+\_\+shabal384\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a028eb2a7628e402cd93a2be3ad345885}{sph\+\_\+shabal512\+\_\+context}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_acdd38369dd973fd58be01246697ce87a}{sph\+\_\+shabal192\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_af69d40d854f3ecdf90bce9c434df078a}{sph\+\_\+shabal192}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_ace02d0dda79bb9d3b06e2186c96c54a8}{sph\+\_\+shabal192\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a9becbd0a12f8af3259ebafa677e2c2ad}{sph\+\_\+shabal192\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a9c6a937b4b5d391fcb883260efb94c75}{sph\+\_\+shabal224\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_aea76aa6b79ec518866448b29577c63c4}{sph\+\_\+shabal224}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a9abebd1828eadcbc3fe06060a04312ad}{sph\+\_\+shabal224\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a3a9aba5c08667471a9cdc26b4644bf83}{sph\+\_\+shabal224\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_afaa0fb846b325b09db798bd420cb4612}{sph\+\_\+shabal256\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a78af799e59c48af876dd18738db0ccdd}{sph\+\_\+shabal256}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_acd9b0dd0002f828b010287a52beaa2a8}{sph\+\_\+shabal256\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_aa2381e5146b221afb8dfbe8bf350cc11}{sph\+\_\+shabal256\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_aaec81802d94a53b74d8395db00516131}{sph\+\_\+shabal384\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a893b716a0daf587f2ec119db90456dd8}{sph\+\_\+shabal384}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_ad527b841eecc3427929253ff8739c85f}{sph\+\_\+shabal384\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a9fd37c3524868b95e3f756fe0de12149}{sph\+\_\+shabal384\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a4753c4c0b11ec86ab2f690d2069307fc}{sph\+\_\+shabal512\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_a87fcddc3e75f86e3a867a88f89e715a3}{sph\+\_\+shabal512}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_aea62f0484af908e431613cd40eed05ad}{sph\+\_\+shabal512\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__shabal_8h_aa3d01a21246e8fc045390d631e7aa6f0}{sph\+\_\+shabal512\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Shabal interface. Shabal is a family of functions which differ by their output size; this implementation defines Shabal for output sizes 192, 224, 256, 384 and 512 bits.
+
+==========================(L\+I\+C\+E\+N\+SE B\+E\+G\+IN)============================
+
+Copyright (c) 2007-\/2010 Projet R\+N\+RT S\+A\+P\+H\+IR
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.
+
+===========================(L\+I\+C\+E\+N\+SE E\+ND)=============================
+
+\begin{DoxyAuthor}{Author}
+Thomas Pornin \href{mailto:thomas.pornin@cryptolog.com}{\texttt{ thomas.\+pornin@cryptolog.\+com}} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{sph__shabal_8h_a48e46178fbf3d16345e313ef5398d302}\label{sph__shabal_8h_a48e46178fbf3d16345e313ef5398d302}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!SPH\_SIZE\_shabal192@{SPH\_SIZE\_shabal192}}
+\index{SPH\_SIZE\_shabal192@{SPH\_SIZE\_shabal192}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_shabal192}{SPH\_SIZE\_shabal192}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal192~192}
+
+Output size (in bits) for Shabal-\/192. \mbox{\Hypertarget{sph__shabal_8h_a1d74b8261bb7c0dbcc4c87a69e51f159}\label{sph__shabal_8h_a1d74b8261bb7c0dbcc4c87a69e51f159}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!SPH\_SIZE\_shabal224@{SPH\_SIZE\_shabal224}}
+\index{SPH\_SIZE\_shabal224@{SPH\_SIZE\_shabal224}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_shabal224}{SPH\_SIZE\_shabal224}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal224~224}
+
+Output size (in bits) for Shabal-\/224. \mbox{\Hypertarget{sph__shabal_8h_a46e058a6e6591b6e8ae33478309087ed}\label{sph__shabal_8h_a46e058a6e6591b6e8ae33478309087ed}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!SPH\_SIZE\_shabal256@{SPH\_SIZE\_shabal256}}
+\index{SPH\_SIZE\_shabal256@{SPH\_SIZE\_shabal256}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_shabal256}{SPH\_SIZE\_shabal256}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal256~256}
+
+Output size (in bits) for Shabal-\/256. \mbox{\Hypertarget{sph__shabal_8h_a8cd5857e1d40d0b2396dc8a7abe72a00}\label{sph__shabal_8h_a8cd5857e1d40d0b2396dc8a7abe72a00}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!SPH\_SIZE\_shabal384@{SPH\_SIZE\_shabal384}}
+\index{SPH\_SIZE\_shabal384@{SPH\_SIZE\_shabal384}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_shabal384}{SPH\_SIZE\_shabal384}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal384~384}
+
+Output size (in bits) for Shabal-\/384. \mbox{\Hypertarget{sph__shabal_8h_a58ab93d51c3417c76b04c0363abd3cdd}\label{sph__shabal_8h_a58ab93d51c3417c76b04c0363abd3cdd}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!SPH\_SIZE\_shabal512@{SPH\_SIZE\_shabal512}}
+\index{SPH\_SIZE\_shabal512@{SPH\_SIZE\_shabal512}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_shabal512}{SPH\_SIZE\_shabal512}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+shabal512~512}
+
+Output size (in bits) for Shabal-\/512. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{sph__shabal_8h_a535b95e62a9bb368a2c9ec7aad54cb8b}\label{sph__shabal_8h_a535b95e62a9bb368a2c9ec7aad54cb8b}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal192\_context@{sph\_shabal192\_context}}
+\index{sph\_shabal192\_context@{sph\_shabal192\_context}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal192\_context}{sph\_shabal192\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a535b95e62a9bb368a2c9ec7aad54cb8b}{sph\+\_\+shabal192\+\_\+context}}}
+
+Type for a Shabal-\/192 context (identical to the common context). \mbox{\Hypertarget{sph__shabal_8h_a7e6d4d257b03851ddbec329177c72af5}\label{sph__shabal_8h_a7e6d4d257b03851ddbec329177c72af5}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal224\_context@{sph\_shabal224\_context}}
+\index{sph\_shabal224\_context@{sph\_shabal224\_context}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal224\_context}{sph\_shabal224\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a7e6d4d257b03851ddbec329177c72af5}{sph\+\_\+shabal224\+\_\+context}}}
+
+Type for a Shabal-\/224 context (identical to the common context). \mbox{\Hypertarget{sph__shabal_8h_a50cb06404d62ee2a9eee76f19a25bae6}\label{sph__shabal_8h_a50cb06404d62ee2a9eee76f19a25bae6}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal256\_context@{sph\_shabal256\_context}}
+\index{sph\_shabal256\_context@{sph\_shabal256\_context}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal256\_context}{sph\_shabal256\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a50cb06404d62ee2a9eee76f19a25bae6}{sph\+\_\+shabal256\+\_\+context}}}
+
+Type for a Shabal-\/256 context (identical to the common context). \mbox{\Hypertarget{sph__shabal_8h_a38472eba0071edd38065cb026f810ab0}\label{sph__shabal_8h_a38472eba0071edd38065cb026f810ab0}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal384\_context@{sph\_shabal384\_context}}
+\index{sph\_shabal384\_context@{sph\_shabal384\_context}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal384\_context}{sph\_shabal384\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a38472eba0071edd38065cb026f810ab0}{sph\+\_\+shabal384\+\_\+context}}}
+
+Type for a Shabal-\/384 context (identical to the common context). \mbox{\Hypertarget{sph__shabal_8h_a028eb2a7628e402cd93a2be3ad345885}\label{sph__shabal_8h_a028eb2a7628e402cd93a2be3ad345885}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal512\_context@{sph\_shabal512\_context}}
+\index{sph\_shabal512\_context@{sph\_shabal512\_context}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal512\_context}{sph\_shabal512\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__shabal__context}{sph\+\_\+shabal\+\_\+context}} \mbox{\hyperlink{sph__shabal_8h_a028eb2a7628e402cd93a2be3ad345885}{sph\+\_\+shabal512\+\_\+context}}}
+
+Type for a Shabal-\/512 context (identical to the common context). 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sph__shabal_8h_af69d40d854f3ecdf90bce9c434df078a}\label{sph__shabal_8h_af69d40d854f3ecdf90bce9c434df078a}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal192@{sph\_shabal192}}
+\index{sph\_shabal192@{sph\_shabal192}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal192()}{sph\_shabal192()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal192 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/192 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a9becbd0a12f8af3259ebafa677e2c2ad}\label{sph__shabal_8h_a9becbd0a12f8af3259ebafa677e2c2ad}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal192\_addbits\_and\_close@{sph\_shabal192\_addbits\_and\_close}}
+\index{sph\_shabal192\_addbits\_and\_close@{sph\_shabal192\_addbits\_and\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal192\_addbits\_and\_close()}{sph\_shabal192\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal192\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (24 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/192 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_ace02d0dda79bb9d3b06e2186c96c54a8}\label{sph__shabal_8h_ace02d0dda79bb9d3b06e2186c96c54a8}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal192\_close@{sph\_shabal192\_close}}
+\index{sph\_shabal192\_close@{sph\_shabal192\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal192\_close()}{sph\_shabal192\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal192\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Shabal-\/192 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (24 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/192 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_acdd38369dd973fd58be01246697ce87a}\label{sph__shabal_8h_acdd38369dd973fd58be01246697ce87a}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal192\_init@{sph\_shabal192\_init}}
+\index{sph\_shabal192\_init@{sph\_shabal192\_init}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal192\_init()}{sph\_shabal192\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal192\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Shabal-\/192 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/192 context (pointer to a {\ttfamily sph\+\_\+shabal192\+\_\+context}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_aea76aa6b79ec518866448b29577c63c4}\label{sph__shabal_8h_aea76aa6b79ec518866448b29577c63c4}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal224@{sph\_shabal224}}
+\index{sph\_shabal224@{sph\_shabal224}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal224()}{sph\_shabal224()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal224 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/224 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a3a9aba5c08667471a9cdc26b4644bf83}\label{sph__shabal_8h_a3a9aba5c08667471a9cdc26b4644bf83}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal224\_addbits\_and\_close@{sph\_shabal224\_addbits\_and\_close}}
+\index{sph\_shabal224\_addbits\_and\_close@{sph\_shabal224\_addbits\_and\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal224\_addbits\_and\_close()}{sph\_shabal224\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal224\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (28 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/224 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a9abebd1828eadcbc3fe06060a04312ad}\label{sph__shabal_8h_a9abebd1828eadcbc3fe06060a04312ad}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal224\_close@{sph\_shabal224\_close}}
+\index{sph\_shabal224\_close@{sph\_shabal224\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal224\_close()}{sph\_shabal224\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal224\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Shabal-\/224 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (28 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/224 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a9c6a937b4b5d391fcb883260efb94c75}\label{sph__shabal_8h_a9c6a937b4b5d391fcb883260efb94c75}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal224\_init@{sph\_shabal224\_init}}
+\index{sph\_shabal224\_init@{sph\_shabal224\_init}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal224\_init()}{sph\_shabal224\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal224\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Shabal-\/224 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/224 context (pointer to a {\ttfamily sph\+\_\+shabal224\+\_\+context}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a78af799e59c48af876dd18738db0ccdd}\label{sph__shabal_8h_a78af799e59c48af876dd18738db0ccdd}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal256@{sph\_shabal256}}
+\index{sph\_shabal256@{sph\_shabal256}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal256()}{sph\_shabal256()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal256 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/256 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_aa2381e5146b221afb8dfbe8bf350cc11}\label{sph__shabal_8h_aa2381e5146b221afb8dfbe8bf350cc11}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal256\_addbits\_and\_close@{sph\_shabal256\_addbits\_and\_close}}
+\index{sph\_shabal256\_addbits\_and\_close@{sph\_shabal256\_addbits\_and\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal256\_addbits\_and\_close()}{sph\_shabal256\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal256\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (32 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/256 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_acd9b0dd0002f828b010287a52beaa2a8}\label{sph__shabal_8h_acd9b0dd0002f828b010287a52beaa2a8}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal256\_close@{sph\_shabal256\_close}}
+\index{sph\_shabal256\_close@{sph\_shabal256\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal256\_close()}{sph\_shabal256\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal256\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Shabal-\/256 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (32 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/256 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_afaa0fb846b325b09db798bd420cb4612}\label{sph__shabal_8h_afaa0fb846b325b09db798bd420cb4612}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal256\_init@{sph\_shabal256\_init}}
+\index{sph\_shabal256\_init@{sph\_shabal256\_init}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal256\_init()}{sph\_shabal256\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal256\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Shabal-\/256 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/256 context (pointer to a {\ttfamily sph\+\_\+shabal256\+\_\+context}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a893b716a0daf587f2ec119db90456dd8}\label{sph__shabal_8h_a893b716a0daf587f2ec119db90456dd8}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal384@{sph\_shabal384}}
+\index{sph\_shabal384@{sph\_shabal384}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal384()}{sph\_shabal384()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal384 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/384 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a9fd37c3524868b95e3f756fe0de12149}\label{sph__shabal_8h_a9fd37c3524868b95e3f756fe0de12149}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal384\_addbits\_and\_close@{sph\_shabal384\_addbits\_and\_close}}
+\index{sph\_shabal384\_addbits\_and\_close@{sph\_shabal384\_addbits\_and\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal384\_addbits\_and\_close()}{sph\_shabal384\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal384\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (48 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/384 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_ad527b841eecc3427929253ff8739c85f}\label{sph__shabal_8h_ad527b841eecc3427929253ff8739c85f}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal384\_close@{sph\_shabal384\_close}}
+\index{sph\_shabal384\_close@{sph\_shabal384\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal384\_close()}{sph\_shabal384\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal384\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Shabal-\/384 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (48 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/384 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_aaec81802d94a53b74d8395db00516131}\label{sph__shabal_8h_aaec81802d94a53b74d8395db00516131}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal384\_init@{sph\_shabal384\_init}}
+\index{sph\_shabal384\_init@{sph\_shabal384\_init}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal384\_init()}{sph\_shabal384\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal384\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Shabal-\/384 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/384 context (pointer to a {\ttfamily sph\+\_\+shabal384\+\_\+context}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a87fcddc3e75f86e3a867a88f89e715a3}\label{sph__shabal_8h_a87fcddc3e75f86e3a867a88f89e715a3}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal512@{sph\_shabal512}}
+\index{sph\_shabal512@{sph\_shabal512}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal512()}{sph\_shabal512()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal512 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/512 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_aa3d01a21246e8fc045390d631e7aa6f0}\label{sph__shabal_8h_aa3d01a21246e8fc045390d631e7aa6f0}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal512\_addbits\_and\_close@{sph\_shabal512\_addbits\_and\_close}}
+\index{sph\_shabal512\_addbits\_and\_close@{sph\_shabal512\_addbits\_and\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal512\_addbits\_and\_close()}{sph\_shabal512\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal512\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (64 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/512 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_aea62f0484af908e431613cd40eed05ad}\label{sph__shabal_8h_aea62f0484af908e431613cd40eed05ad}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal512\_close@{sph\_shabal512\_close}}
+\index{sph\_shabal512\_close@{sph\_shabal512\_close}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal512\_close()}{sph\_shabal512\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal512\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Shabal-\/512 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (64 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/512 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__shabal_8h_a4753c4c0b11ec86ab2f690d2069307fc}\label{sph__shabal_8h_a4753c4c0b11ec86ab2f690d2069307fc}} 
+\index{sph\_shabal.h@{sph\_shabal.h}!sph\_shabal512\_init@{sph\_shabal512\_init}}
+\index{sph\_shabal512\_init@{sph\_shabal512\_init}!sph\_shabal.h@{sph\_shabal.h}}
+\subsubsection{\texorpdfstring{sph\_shabal512\_init()}{sph\_shabal512\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+shabal512\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Shabal-\/512 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Shabal-\/512 context (pointer to a {\ttfamily sph\+\_\+shabal512\+\_\+context}) \\
+\hline
+\end{DoxyParams}

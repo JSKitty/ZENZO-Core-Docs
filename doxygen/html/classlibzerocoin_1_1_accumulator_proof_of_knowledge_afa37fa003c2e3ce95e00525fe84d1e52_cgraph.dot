@@ -1,0 +1,17 @@
+digraph "libzerocoin::AccumulatorProofOfKnowledge::Verify"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7 [label="libzerocoin::Accumulator\lProofOfKnowledge::Verify",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CBigNum::pow_mod",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_big_num.html#a949004e3f63921b28b4e245624854289",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CBigNum::inverse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_big_num.html#ace6cb4447751b27f00139d60dd8ebba4",tooltip=" "];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="libzerocoin::Accumulator\l::getValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibzerocoin_1_1_accumulator.html#abe9f6281164864e8cd7ca48ad8a7bd18",tooltip=" "];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CBigNum::pow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_big_num.html#aa8c79c0a8ca34ed34ef315047137ecc7",tooltip=" "];
+}

@@ -1,0 +1,32 @@
+digraph "D:/Documentz/GitHub/ZENZO-Core/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_9bb5e4c759ed59ac35a45f3375e510df {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ZENZO-Core" fontname="Helvetica", fontsize="10", URL="dir_9bb5e4c759ed59ac35a45f3375e510df.html"]
+  subgraph clusterdir_6be210b7615ccb4059ce9ba907fecdcd {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6be210b7615ccb4059ce9ba907fecdcd.html"];
+    dir_6be210b7615ccb4059ce9ba907fecdcd [shape=plaintext label="src"];
+    dir_45bcc550acca8eee5b22962168fbe667 [shape=box label="compat" color="black" fillcolor="white" style="filled" URL="dir_45bcc550acca8eee5b22962168fbe667.html"];
+    dir_d5756308c5e75e41afd574e2b8f775fe [shape=box label="config" color="black" fillcolor="white" style="filled" URL="dir_d5756308c5e75e41afd574e2b8f775fe.html"];
+    dir_df3c357523baf0e3778cc0aaa888f7b8 [shape=box label="crypto" color="black" fillcolor="white" style="filled" URL="dir_df3c357523baf0e3778cc0aaa888f7b8.html"];
+    dir_1a92a43c3968215e1d10b572bbcb9d18 [shape=box label="json" color="black" fillcolor="white" style="filled" URL="dir_1a92a43c3968215e1d10b572bbcb9d18.html"];
+    dir_abd78e7160b977a8a1af343126df78f5 [shape=box label="leveldb" color="red" fillcolor="white" style="filled" URL="dir_abd78e7160b977a8a1af343126df78f5.html"];
+    dir_3e756ca911dba607bdd00970520fbf51 [shape=box label="libzerocoin" color="black" fillcolor="white" style="filled" URL="dir_3e756ca911dba607bdd00970520fbf51.html"];
+    dir_9c497ef0db898b71463705165ca961be [shape=box label="obj" color="black" fillcolor="white" style="filled" URL="dir_9c497ef0db898b71463705165ca961be.html"];
+    dir_d7f96a380170bf1fa380a1d70aacbd95 [shape=box label="primitives" color="black" fillcolor="white" style="filled" URL="dir_d7f96a380170bf1fa380a1d70aacbd95.html"];
+    dir_ab5313f789396ea1a409d946c407d23c [shape=box label="qt" color="red" fillcolor="white" style="filled" URL="dir_ab5313f789396ea1a409d946c407d23c.html"];
+    dir_0903d80f186d7d0cd517f286222d6e0d [shape=box label="script" color="black" fillcolor="white" style="filled" URL="dir_0903d80f186d7d0cd517f286222d6e0d.html"];
+    dir_fbddb3a64e99980bf12cb8117bf4e7cb [shape=box label="secp256k1" color="red" fillcolor="white" style="filled" URL="dir_fbddb3a64e99980bf12cb8117bf4e7cb.html"];
+    dir_bae66100787555356107e26dac812a2d [shape=box label="test" color="red" fillcolor="white" style="filled" URL="dir_bae66100787555356107e26dac812a2d.html"];
+    dir_7baea757034cd8babe9d8856aca1952f [shape=box label="univalue" color="black" fillcolor="white" style="filled" URL="dir_7baea757034cd8babe9d8856aca1952f.html"];
+    dir_d040f55ec1c48133effaad2ad1c10a01 [shape=box label="zmq" color="black" fillcolor="white" style="filled" URL="dir_d040f55ec1c48133effaad2ad1c10a01.html"];
+  }
+  }
+  dir_bae66100787555356107e26dac812a2d->dir_3e756ca911dba607bdd00970520fbf51 [headlabel="18", labeldistance=1.5 headhref="dir_000023_000027.html"];
+  dir_ab5313f789396ea1a409d946c407d23c->dir_d7f96a380170bf1fa380a1d70aacbd95 [headlabel="2", labeldistance=1.5 headhref="dir_000005_000026.html"];
+  dir_ab5313f789396ea1a409d946c407d23c->dir_3e756ca911dba607bdd00970520fbf51 [headlabel="1", labeldistance=1.5 headhref="dir_000005_000027.html"];
+  dir_d7f96a380170bf1fa380a1d70aacbd95->dir_3e756ca911dba607bdd00970520fbf51 [headlabel="1", labeldistance=1.5 headhref="dir_000026_000027.html"];
+  dir_3e756ca911dba607bdd00970520fbf51->dir_d7f96a380170bf1fa380a1d70aacbd95 [headlabel="1", labeldistance=1.5 headhref="dir_000027_000026.html"];
+  dir_6be210b7615ccb4059ce9ba907fecdcd->dir_df3c357523baf0e3778cc0aaa888f7b8 [headlabel="16", labeldistance=1.5 headhref="dir_000004_000008.html"];
+}

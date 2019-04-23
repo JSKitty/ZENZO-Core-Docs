@@ -1,0 +1,26 @@
+digraph "CBigNum::inverse"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node10 [label="CBigNum::inverse",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="libzerocoin::Accumulator\lProofOfKnowledge::Accumulator\lProofOfKnowledge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibzerocoin_1_1_accumulator_proof_of_knowledge.html#acce987e79e2498918495c3a7e8873810",tooltip=" "];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="libzerocoin::Accumulator\lProofOfKnowledge::Verify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibzerocoin_1_1_accumulator_proof_of_knowledge.html#afa37fa003c2e3ce95e00525fe84d1e52",tooltip=" "];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="CBigNum::pow_mod",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_big_num.html#a949004e3f63921b28b4e245624854289",tooltip=" "];
+  Node13 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="libzerocoin::deriveInteger\lGroupParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_param_generation_8cpp.html#a104c1a4d313174893b0de7595bfa7baa",tooltip="Deterministically compute a set of group parameters using NIST procedures."];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="libzerocoin::CalculateParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_param_generation_8cpp.html#a6304d284cf7c81d9598ea68f3c5a81df",tooltip="Fill in a set of Zerocoin parameters from a modulus \"N\"."];
+  Node15 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="libzerocoin::ZerocoinParams\l::ZerocoinParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibzerocoin_1_1_zerocoin_params.html#ad7abfc8417e3f07feb7b786cb13c72b0",tooltip="Construct a set of Zerocoin parameters from a modulus \"N\"."];
+  Node14 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="libzerocoin::IntegerGroup\lParams::randomElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibzerocoin_1_1_integer_group_params.html#a012079a03d0aeacc42fe005ed7c0ab62",tooltip=" "];
+}

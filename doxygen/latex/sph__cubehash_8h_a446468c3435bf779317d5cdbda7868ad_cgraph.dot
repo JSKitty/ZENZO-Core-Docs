@@ -1,0 +1,10 @@
+digraph "sph_cubehash224_addbits_and_close"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sph_cubehash224_addbits\l_and_close",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="sph_cubehash224_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sph__cubehash_8h.html#a77e1a7f6aee90b3f5e75d00bd9a81ae2",tooltip=" "];
+}

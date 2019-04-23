@@ -1,0 +1,22 @@
+digraph "RFC6979_HMAC_SHA256::Generate"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node3 [label="RFC6979_HMAC_SHA256\l::Generate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="CKey::Sign",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key.html#aa9b184a4a71d3e1a40aab360cf68e86c",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="CKey::VerifyPubKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key.html#ac53425b8d0f89067bce781c485101b20",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="CKey::Load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key.html#a141751588f8bfe5f1b6fc27f4e64b63f",tooltip="Load private key and check that public key matches."];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="CKey::SignCompact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key.html#afe77d80889aa68e92e6882e75424cfb8",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="CObfuScationSigner\l::SignMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfu_scation_signer.html#a004eab16d18045b42d51037eab817585",tooltip="Sign the message, returns true if successful."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="CObfuscationQueue::Sign",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfuscation_queue.html#a7d7be50e6c9ca531f4a4b69a3f7c0b79",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="CObfuscationPool::IsCompatible\lWithSession",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_obfuscation_pool.html#a820877f910e3f13086f3996acff68677",tooltip="Is this amount compatible with other client in the pool?"];
+}

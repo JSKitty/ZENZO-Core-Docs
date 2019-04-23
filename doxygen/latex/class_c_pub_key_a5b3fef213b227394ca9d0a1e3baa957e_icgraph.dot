@@ -1,0 +1,12 @@
+digraph "CPubKey::Verify"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node2 [label="CPubKey::Verify",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CKey::VerifyPubKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key.html#ac53425b8d0f89067bce781c485101b20",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="CKey::Load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_key.html#a141751588f8bfe5f1b6fc27f4e64b63f",tooltip="Load private key and check that public key matches."];
+}
